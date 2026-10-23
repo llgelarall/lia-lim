@@ -1,0 +1,386 @@
+{
+  "source_files": {
+    "assets/excels/LIA_final_comparison.csv": "88f49be1a8f0f751614c53756a2a8c82ee78c3288bbe6cf993c8fcc315ccedcc",
+    "assets/excels/LIM_final_comparison.csv": "c2c4860cf81ed905e140c03460ce68faafe13cb43f5442998d4ddc19644b6c52",
+    "data/benchmark-methodology.json": "de04ff43da83d5962f69a10eeabbbffbbf92ee70ddb43e7183aa4c5460bc5f34"
+  },
+  "source_rows_checked": 95,
+  "canonical_error_conversions_verified": 27,
+  "benchmark_rows_added": 27,
+  "plot_count": 6,
+  "issues": [
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 2,
+      "module": "lia_00",
+      "field": "delay_ns",
+      "value": -0.135,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 3,
+      "module": "lia_01",
+      "field": "delay_ns",
+      "value": -0.135,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 4,
+      "module": "lia_02",
+      "field": "delay_ns",
+      "value": -0.135,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 5,
+      "module": "lia_03",
+      "field": "delay_ns",
+      "value": -0.135,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 6,
+      "module": "lia_04",
+      "field": "delay_ns",
+      "value": -0.10974,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 7,
+      "module": "lia_05",
+      "field": "delay_ns",
+      "value": -0.135,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 8,
+      "module": "lia_06",
+      "field": "delay_ns",
+      "value": -0.13502,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 9,
+      "module": "lia_07",
+      "field": "delay_ns",
+      "value": -0.10205,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 10,
+      "module": "lia_08",
+      "field": "delay_ns",
+      "value": -0.10205,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 11,
+      "module": "lia_09",
+      "field": "delay_ns",
+      "value": -0.0666,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 12,
+      "module": "lia_10",
+      "field": "delay_ns",
+      "value": -0.13502,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 13,
+      "module": "lia_11",
+      "field": "delay_ns",
+      "value": -0.135,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 14,
+      "module": "lia_12",
+      "field": "delay_ns",
+      "value": -0.13502,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 15,
+      "module": "lia_13",
+      "field": "delay_ns",
+      "value": -0.135,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 16,
+      "module": "evo9_add8u_00M",
+      "field": "delay_ns",
+      "value": -0.16937,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 17,
+      "module": "evo9_add8u_02Y",
+      "field": "delay_ns",
+      "value": -0.135,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 18,
+      "module": "evo9_add8u_05G",
+      "field": "delay_ns",
+      "value": -0.29178,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 19,
+      "module": "evo9_add8u_0D0",
+      "field": "delay_ns",
+      "value": -0.10205,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 20,
+      "module": "evo9_add8u_0E2",
+      "field": "delay_ns",
+      "value": -0.18969,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 21,
+      "module": "evo9_add8u_0JM",
+      "field": "delay_ns",
+      "value": -0.135,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 22,
+      "module": "evo9_add8u_0NH",
+      "field": "delay_ns",
+      "value": -0.25751,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 23,
+      "module": "evo9_add8u_0NQ",
+      "field": "delay_ns",
+      "value": -0.19822,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 24,
+      "module": "evo9_add8u_0NS",
+      "field": "delay_ns",
+      "value": -0.22913,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 25,
+      "module": "evo9_add8u_0PA",
+      "field": "delay_ns",
+      "value": -0.1909,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 26,
+      "module": "evo9_add8u_0PL",
+      "field": "delay_ns",
+      "value": -0.16541,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 27,
+      "module": "evo9_add8u_0TP",
+      "field": "delay_ns",
+      "value": -0.20021,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 28,
+      "module": "evo9_add8u_0UK",
+      "field": "delay_ns",
+      "value": -0.10205,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 29,
+      "module": "evo9_add8u_108",
+      "field": "delay_ns",
+      "value": -0.1909,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 30,
+      "module": "evo9_add8u_1HG",
+      "field": "delay_ns",
+      "value": -0.43299,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 31,
+      "module": "evo9_add8u_2AM",
+      "field": "delay_ns",
+      "value": -0.34874,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 32,
+      "module": "evo9_add8u_2J3",
+      "field": "delay_ns",
+      "value": -0.2638,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 33,
+      "module": "evo9_add8u_2LL",
+      "field": "delay_ns",
+      "value": -0.25691,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 34,
+      "module": "evo9_add8u_3RE",
+      "field": "delay_ns",
+      "value": -0.21405,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 35,
+      "module": "evo9_add8u_4M7",
+      "field": "delay_ns",
+      "value": -0.31802,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 36,
+      "module": "evo9_add8u_6FT",
+      "field": "delay_ns",
+      "value": -0.25474,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 37,
+      "module": "evo9_add8u_6K6",
+      "field": "delay_ns",
+      "value": -0.36265,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 38,
+      "module": "evo9_add8u_6LG",
+      "field": "delay_ns",
+      "value": -0.3188,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 39,
+      "module": "evo9_add8u_6MZ",
+      "field": "delay_ns",
+      "value": -0.30257,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 40,
+      "module": "evo9_add8u_6P8",
+      "field": "delay_ns",
+      "value": -0.33908,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 41,
+      "module": "evo9_add8u_6PT",
+      "field": "delay_ns",
+      "value": -0.4579,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 42,
+      "module": "evo9_add8u_6QU",
+      "field": "delay_ns",
+      "value": -0.29578,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 43,
+      "module": "evo9_add8u_6R6",
+      "field": "delay_ns",
+      "value": -0.3041,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 44,
+      "module": "evo9_add8u_6S4",
+      "field": "delay_ns",
+      "value": -0.47811,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 45,
+      "module": "evo9_add8u_6SM",
+      "field": "delay_ns",
+      "value": -0.32928,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIA_final_comparison.csv",
+      "row": 46,
+      "module": "evo9_add8u_6TH",
+      "field": "delay_ns",
+      "value": -0.31964,
+      "issue": "Negative reported timing; cannot be treated as a physical propagation delay without the underlying timing report."
+    },
+    {
+      "source_file": "assets/excels/LIM_final_comparison.csv",
+      "row": 47,
+      "module": "mul8u_TD3",
+      "issue": "Missing or incomplete PPA report; omit absent values from plots."
+    }
+  ],
+  "limitations": [
+    "The common Yosys/ABC Nangate45 and pre-layout OpenSTA/OpenROAD flow, including identical timing/loading/activity assumptions, is maintainer-reported. Scripts, tool versions, exact corner, voltage, temperature, and numerical constraints/activity were not supplied.",
+    "Negative adder timing values are plotted verbatim and identified as unresolved reported timing, rather than physical propagation delay.",
+    "EvoApprox model code and timing/power reports were not supplied here; its CSV verification flags are source-reported and have not been independently rerun.",
+    "Power curves use reported total_uw, without reconstructing totals from rounded components.",
+    "Original-paper synthesis results are separate characterization contexts; no paper measurements were substituted into these CSV plots."
+  ]
+}

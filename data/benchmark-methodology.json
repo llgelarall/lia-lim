@@ -1,0 +1,73 @@
+{
+  "source_type": "maintainer statement",
+  "source": "Methodology supplied by Gelara in the project conversation on 2026-10-24",
+  "scope": "All LIA, LIM, and EvoApprox architectures in the supplied comparison CSVs",
+  "flow": {
+    "synthesis": "Yosys",
+    "technology_mapping": "ABC",
+    "standard_cell_library": "Nangate45 standard-cell library",
+    "timing_and_power": "OpenSTA within OpenROAD",
+    "stage": "pre-layout",
+    "common_assumptions": {
+      "timing": "Identical across architectures, as reported by the maintainer",
+      "loading": "Identical across architectures, as reported by the maintainer",
+      "switching_activity": "Identical across architectures, as reported by the maintainer"
+    },
+    "unrecorded_details": [
+      "Tool versions and synthesis/analysis scripts",
+      "Exact Liberty file, revision, and process corner",
+      "Voltage and temperature",
+      "Numerical timing constraints, input transition times, and output loads",
+      "Numerical switching activity, activity source, and operating frequency",
+      "Underlying timing/power reports and the definition of delay_ns"
+    ]
+  },
+  "verified_functional_domains": [
+    {
+      "family": "LIA",
+      "operand_bits": 9,
+      "lpl": 8,
+      "ordered_pairs_per_architecture": 262144,
+      "input_domain": "a,b in 0..511; 512 * 512 ordered pairs",
+      "report": "result/validation/adder9-lpl8-rtl.json"
+    },
+    {
+      "family": "LIM",
+      "operand_bits": 8,
+      "lpl": 8,
+      "ordered_pairs_per_architecture": 65536,
+      "input_domain": "a,b in 0..255; 256 * 256 ordered pairs",
+      "report": "result/validation/multiplier8-lpl8-rtl.json"
+    }
+  ],
+  "input_count_correction": {
+    "source_claim": "65,536 unsigned 9x9 input combinations",
+    "correction": "65,536 is the number of ordered pairs for two 8-bit operands. Two 9-bit operands require 262,144 pairs. The published descriptions use the counts in the saved exhaustive reports."
+  },
+  "original_studies": [
+    {
+      "title": "A Comprehensive Model for Efficient Design Space Exploration of Imprecise Computational Blocks",
+      "year": 2023,
+      "url": "https://doi.org/10.1145/3625555",
+      "review_status": "Publisher full text was not accessible during this review (HTTP 403). No paper-specific synthesis parameters or numerical results were transcribed."
+    },
+    {
+      "title": "EvoApprox8b: Library of Approximate Adders and Multipliers for Circuit Design and Benchmarking of Approximation Methods",
+      "year": 2017,
+      "url": "https://doi.org/10.23919/DATE.2017.7926993",
+      "author_hosted_pdf": "https://www.fit.vut.cz/research/result-file/c134714/279697/paper.pdf",
+      "review_status": "Full text checked, sections III-A, III-C, and IV. The original study uses TSMC 180 nm components and estimates validated against Cadence Encounter RTL Compiler. Its reported results are distinct from this site's maintainer-reported Nangate45 flow. No paper measurements were imported into the plots."
+    },
+    {
+      "title": "EvoApproxLib: Extended Library of Approximate Arithmetic Circuits",
+      "year": 2019,
+      "url": "https://woset-workshop.github.io/PDFs/2019/a10.pdf",
+      "review_status": "Full text checked as the library-extension reference. No paper measurements or inferred synthesis settings were imported into the plots."
+    }
+  ],
+  "verification_limits": [
+    "The named flow and common assumptions are maintainer-reported; the synthesis/analysis flow was not independently rerun for this site.",
+    "EvoApprox C/RTL verification flags remain source-reported because the corresponding model sources and testbenches were not supplied.",
+    "Adder delay_ns values are negative. The new flow description does not resolve whether these values denote a path delay, slack, or another timing quantity; they remain reported timing, without a sign or absolute-value conversion."
+  ]
+}

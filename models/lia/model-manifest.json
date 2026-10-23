@@ -1,0 +1,171 @@
+{
+  "family": "lia",
+  "source_sha256": {
+    "assets/codes/LFAs.c": "f07b6c1df5506c5670c1eb3c728f1fe216bb3a155a8141684a57a699bdf18cc5",
+    "assets/codes/LIAs.ipynb": "46dd0992a75e048dc86663f0ecae574310f28b2d045e1827f897111f2e78db7d",
+    "assets/codes/LIA/lia_00.v": "98de0e99ad8a8fd2dcc334db78912031ea4ae9da792f10059f00d6796e652b46",
+    "assets/codes/LIA/lia_01.v": "3fc0729c8fc4d91d73540655537d34312d319e9a1bbe85ba91d187794390de2a",
+    "assets/codes/LIA/lia_02.v": "d9f7fbbc00efa3a5b09faf039d437ec98812c91457095d752219de9e8d666ac3",
+    "assets/codes/LIA/lia_03.v": "235e6f78de91ee1cc94cf0ac4d2a6278c2feb077cd617058a8b52bf0cbaac184",
+    "assets/codes/LIA/lia_04.v": "7a83930ff370cb4308ade98b58bf108b91f0a84d6f9b2ea5ac1c0ca9e23c93af",
+    "assets/codes/LIA/lia_05.v": "8fc4c205b7006c7586d6c9dd08e7a8ac49b43dcd0c6ea80e205f148191d28305",
+    "assets/codes/LIA/lia_06.v": "b2ef8c115f1b76d817b0b81e6072d292e7e5b6207dd43218632ed7946ecd5853",
+    "assets/codes/LIA/lia_07.v": "8b8fc219d4a6e4834cbea7dc6933ba3113b31e9e632284833dbc11092ac6187a",
+    "assets/codes/LIA/lia_08.v": "bf378ccba3e79bfdcfc2df84e61cb6e08abeac5856cd6d8e0f4092b58556ae2f",
+    "assets/codes/LIA/lia_09.v": "333df077a635db66cfbdd306408df15a2d4fdb0ee9a116248d728d1ba61beba7",
+    "assets/codes/LIA/lia_10.v": "e44375186433a18e508b63d47837c509414568c59bb80c9ffd46cd3a6849b3df",
+    "assets/codes/LIA/lia_11.v": "21b942753dfe9ad571c0b53167d949644f6f1168d04a7d8ad9b047a3dd5e97f9",
+    "assets/codes/LIA/lia_12.v": "80fe556013404d09d47ac979a163a3c44b84a77e161978fb63bc25eee10c4ac5",
+    "assets/codes/LIA/lia_13.v": "c2fbcf58d60431fc0d81d929d14aa9bfe38e43fdcc9b250603758dff18bbba61"
+  },
+  "validated_domain": {
+    "width": 8,
+    "lpl": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "operands": [
+      0,
+      255
+    ]
+  },
+  "c_python_report": "result/validation/adder8-c-python.json",
+  "rtl_report": "result/validation/adder8-rtl.json",
+  "architectures": [
+    {
+      "id": "lia_00",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_ME_Best",
+      "rtl": "assets/codes/LIA/lia_00.v"
+    },
+    {
+      "id": "lia_01",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_MAE_PE_Best",
+      "rtl": "assets/codes/LIA/lia_01.v"
+    },
+    {
+      "id": "lia_02",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_MSE_Best",
+      "rtl": "assets/codes/LIA/lia_02.v"
+    },
+    {
+      "id": "lia_03",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_MSE_Best_2",
+      "rtl": "assets/codes/LIA/lia_03.v"
+    },
+    {
+      "id": "lia_04",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_ME_N50_2",
+      "rtl": "assets/codes/LIA/lia_04.v"
+    },
+    {
+      "id": "lia_05",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_ME_N25_LOA",
+      "rtl": "assets/codes/LIA/lia_05.v"
+    },
+    {
+      "id": "lia_06",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_ME_N25_2",
+      "rtl": "assets/codes/LIA/lia_06.v"
+    },
+    {
+      "id": "lia_07",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_ME_N25_3",
+      "rtl": "assets/codes/LIA/lia_07.v"
+    },
+    {
+      "id": "lia_08",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_ME_N25_4",
+      "rtl": "assets/codes/LIA/lia_08.v"
+    },
+    {
+      "id": "lia_09",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_ME_0_1",
+      "rtl": "assets/codes/LIA/lia_09.v"
+    },
+    {
+      "id": "lia_10",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_ME_0_2",
+      "rtl": "assets/codes/LIA/lia_10.v"
+    },
+    {
+      "id": "lia_11",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_ME_P25",
+      "rtl": "assets/codes/LIA/lia_11.v"
+    },
+    {
+      "id": "lia_12",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_ME_N50_1",
+      "rtl": "assets/codes/LIA/lia_12.v"
+    },
+    {
+      "id": "lia_13",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_ME_P50",
+      "rtl": "assets/codes/LIA/lia_13.v"
+    }
+  ],
+  "generated_sha256": {
+    "models/lia/c/lia_00.c": "ed67ff55cc11c6748868e415b9417625421d79b6fac89cbe0141de6a528a8856",
+    "models/lia/python/lia_00.py": "f6b5464e0fe653b92effe56064f54b5c0ea939e27ce27563c43a89e26be99b18",
+    "models/lia/c/lia_01.c": "086c4e8ab169b965dcfedf26778d46cf64791dd10a1c24edc95c33ce7ca0e3ca",
+    "models/lia/python/lia_01.py": "76cd3279d67d24a77f4f5707e0a4a8526943607874e700180a04c46534c02f1e",
+    "models/lia/c/lia_02.c": "bdf2592f43ef06bccadb194c6299c74d0e78730bf6c7ab185f1a956de402454c",
+    "models/lia/python/lia_02.py": "8fc7fdd8e362ecf716c82e3a5273d81b890468b98be57f4599824b2d9bdbc966",
+    "models/lia/c/lia_03.c": "10e3c5cd21cb440a02e8d63a6b6604d5b5500059b22661722daa5f5ffc9427cc",
+    "models/lia/python/lia_03.py": "4ed6746ad454ac4b055e435a1b113808f7fe0785d77d43bc55e33e7f553bb5b8",
+    "models/lia/c/lia_04.c": "3e5988295a701e0a0144baac628148f2e9ff3d44696e3dc0526ce68cca39e443",
+    "models/lia/python/lia_04.py": "89b5de388f106fddf4067779040d7ac051d3899bba08f051321008ac0be8b466",
+    "models/lia/c/lia_05.c": "120b487a67c3f48c527d6e9d5af9c66e35a416199ec3b3d76b660049392e0244",
+    "models/lia/python/lia_05.py": "279c582321e06b9263aa1835f62825792edb5b1237b9ccc79a5451a08f560507",
+    "models/lia/c/lia_06.c": "0757e4f88daf91c1f06214e32b3b30d7374b142d1657c471c5143c1188b1de43",
+    "models/lia/python/lia_06.py": "246c7629ef4ebcc443fddccc52057c912af81f228068d0b495b9e68e930f0c53",
+    "models/lia/c/lia_07.c": "47bf3cb089046b5b7f854e8ef8a6e310e2480bc77af7cca759e17fbc3b9c02e7",
+    "models/lia/python/lia_07.py": "1d0b7b845e34f6800516093b00097695ebcb63a7acd4c6217b4c5fa493a9e5f1",
+    "models/lia/c/lia_08.c": "eb256a082ad2638176b3f8e98e5b8a28556b0028c4d5fdaba1a04d84d5460bad",
+    "models/lia/python/lia_08.py": "35ad26674a80db1987f535684ced686da000a9ea5b14157ac374e87295abce5e",
+    "models/lia/c/lia_09.c": "32e0b4f0a08ef18484218e24d62f46135a7db1cf36b3181a67d7a9d7cee83b54",
+    "models/lia/python/lia_09.py": "9d6cdf4fca42c835697fcc7f797f8d6bff85f240cb0115a8a3f5787529dd3960",
+    "models/lia/c/lia_10.c": "accbae44df394b16073237340bdd8627858d51d91871f8e9bf87190f8346f165",
+    "models/lia/python/lia_10.py": "d70d20b8c68701227ca0ecf228cd33c928636f73d97feda30ca602681f9a7791",
+    "models/lia/c/lia_11.c": "59318446b72ee3d863e4aea1e05dce745b81805e4c4b4bcc9df6d9e96eaac8e8",
+    "models/lia/python/lia_11.py": "02b29ae1c78a54d16ea9bbea5b73af3b2f6839ab5d7aacd922544ccaacfcb8da",
+    "models/lia/c/lia_12.c": "db8e1bd69a0d30a727799b4aae361804570c97ce5b39a7c532ea9e8078635834",
+    "models/lia/python/lia_12.py": "51f01e125f37998f911730af6d2429f0ab3840e6cac9428bb478ae0f73f9797e",
+    "models/lia/c/lia_13.c": "52df1f85fa17651d84adcea28abc768b558c75904161d682b59ed1cc457b5ded",
+    "models/lia/python/lia_13.py": "d7aee1c7c4f5ce5a9d91aa4fcc29d73c10f790c14b37952bae30d1e8e124cf88",
+    "models/lia/lia_all.c": "f07b6c1df5506c5670c1eb3c728f1fe216bb3a155a8141684a57a699bdf18cc5",
+    "models/lia/lia_all.py": "b717f5980c17c97435935ae1e1e4bb8ad92d2e3246b38f695f0077bd88a531a0",
+    "models/lia/lia_all.v": "c54713ef33824783faecf3613d4000884218940a47525cbe61d9d062377ace28",
+    "models/lia/README.md": "32c680e73efc78505afb16d0a8370ee15db7a7c5765cca93af097cbddcfcb525"
+  },
+  "packaging_checks": "Standalone Python method ASTs match notebook methods; C files compile independently; Python edge cases pass.",
+  "additional_validated_domains": [
+    {
+      "width": 9,
+      "lpl": [
+        8
+      ],
+      "pairs_per_architecture": 262144,
+      "c_python_report": "result/validation/adder9-lpl8-c-python.json",
+      "rtl_report": "result/validation/adder9-lpl8-rtl.json"
+    }
+  ]
+}

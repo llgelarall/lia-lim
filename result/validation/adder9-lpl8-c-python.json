@@ -1,0 +1,1476 @@
+{
+  "kind": "adder",
+  "width": 9,
+  "lpl_values": [
+    8
+  ],
+  "input_domain": "all ordered pairs of unsigned integers 0..511",
+  "subset_domain": "all ordered pairs 0..255",
+  "sign": "approximate-exact",
+  "normalization": "none; PE is a fraction",
+  "baseline": "assets/codes/LFAs.c",
+  "baseline_sha256": "f07b6c1df5506c5670c1eb3c728f1fe216bb3a155a8141684a57a699bdf18cc5",
+  "python_source": "assets/codes/LIAs.ipynb",
+  "python_source_sha256": "46dd0992a75e048dc86663f0ecae574310f28b2d045e1827f897111f2e78db7d",
+  "toolchain": {
+    "python": "3.12.8",
+    "compiler": "gcc.exe (MinGW.org GCC-6.3.0-1) 6.3.0",
+    "compiler_target": "mingw32",
+    "compiler_flags": [
+      "-std=c99",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-lm"
+    ]
+  },
+  "evaluator": "tools/validate_models.py",
+  "evaluator_sha256": "549aaf9b12c0405df6d4e21e822f5e38d1e193ed55752ca4d58b4ae759f13849",
+  "configurations": [
+    {
+      "id": "lia_00",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_ME_Best",
+      "rtl": "assets/codes/LIA/lia_00.v",
+      "lpl": 8,
+      "width": 9,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 262144,
+        "metrics": {
+          "me": 0.0,
+          "mse": 2730.5,
+          "mae": 42.6640625,
+          "pe": 0.9921875,
+          "max": 127,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "0",
+          "mse": "5461/2",
+          "mae": "5461/128",
+          "pe": "127/128"
+        },
+        "integer_sums": {
+          "signed": 0,
+          "absolute": 11184128,
+          "squared": 715784192,
+          "different": 260096
+        }
+      },
+      "c_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.0,
+          "mse": 2730.5,
+          "mae": 42.6640625,
+          "pe": 0.9921875,
+          "max": 127,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "0",
+          "mse": "5461/2",
+          "mae": "5461/128",
+          "pe": "127/128"
+        },
+        "integer_sums": {
+          "signed": 0,
+          "absolute": 2796032,
+          "squared": 178946048,
+          "different": 65024
+        }
+      },
+      "python": {
+        "count": 262144,
+        "metrics": {
+          "me": 0.0,
+          "mse": 2730.5,
+          "mae": 42.6640625,
+          "pe": 0.9921875,
+          "max": 127,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "0",
+          "mse": "5461/2",
+          "mae": "5461/128",
+          "pe": "127/128"
+        },
+        "integer_sums": {
+          "signed": 0,
+          "absolute": 11184128,
+          "squared": 715784192,
+          "different": 260096
+        }
+      },
+      "python_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.0,
+          "mse": 2730.5,
+          "mae": 42.6640625,
+          "pe": 0.9921875,
+          "max": 127,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "0",
+          "mse": "5461/2",
+          "mae": "5461/128",
+          "pe": "127/128"
+        },
+        "integer_sums": {
+          "signed": 0,
+          "absolute": 2796032,
+          "squared": 178946048,
+          "different": 65024
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lia_01",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_MAE_PE_Best",
+      "rtl": "assets/codes/LIA/lia_01.v",
+      "lpl": 8,
+      "width": 9,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 262144,
+        "metrics": {
+          "me": -31.75,
+          "mse": 2032.0,
+          "mae": 31.75,
+          "pe": 0.86651611328125,
+          "max": 0,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "-127/4",
+          "mse": "2032",
+          "mae": "127/4",
+          "pe": "14197/16384"
+        },
+        "integer_sums": {
+          "signed": -8323072,
+          "absolute": 8323072,
+          "squared": 532676608,
+          "different": 227152
+        }
+      },
+      "c_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": -31.75,
+          "mse": 2032.0,
+          "mae": 31.75,
+          "pe": 0.86651611328125,
+          "max": 0,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "-127/4",
+          "mse": "2032",
+          "mae": "127/4",
+          "pe": "14197/16384"
+        },
+        "integer_sums": {
+          "signed": -2080768,
+          "absolute": 2080768,
+          "squared": 133169152,
+          "different": 56788
+        }
+      },
+      "python": {
+        "count": 262144,
+        "metrics": {
+          "me": -31.75,
+          "mse": 2032.0,
+          "mae": 31.75,
+          "pe": 0.86651611328125,
+          "max": 0,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "-127/4",
+          "mse": "2032",
+          "mae": "127/4",
+          "pe": "14197/16384"
+        },
+        "integer_sums": {
+          "signed": -8323072,
+          "absolute": 8323072,
+          "squared": 532676608,
+          "different": 227152
+        }
+      },
+      "python_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": -31.75,
+          "mse": 2032.0,
+          "mae": 31.75,
+          "pe": 0.86651611328125,
+          "max": 0,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "-127/4",
+          "mse": "2032",
+          "mae": "127/4",
+          "pe": "14197/16384"
+        },
+        "integer_sums": {
+          "signed": -2080768,
+          "absolute": 2080768,
+          "squared": 133169152,
+          "different": 56788
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lia_02",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_MSE_Best",
+      "rtl": "assets/codes/LIA/lia_02.v",
+      "lpl": 8,
+      "width": 9,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 262144,
+        "metrics": {
+          "me": -72.0,
+          "mse": 7594.5,
+          "mae": 73.998046875,
+          "pe": 0.994140625,
+          "max": 31,
+          "min": -191
+        },
+        "exact_ratios": {
+          "me": "-72",
+          "mse": "15189/2",
+          "mae": "37887/512",
+          "pe": "509/512"
+        },
+        "integer_sums": {
+          "signed": -18874368,
+          "absolute": 19398144,
+          "squared": 1990852608,
+          "different": 260608
+        }
+      },
+      "c_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": -72.0,
+          "mse": 7594.5,
+          "mae": 73.998046875,
+          "pe": 0.994140625,
+          "max": 31,
+          "min": -191
+        },
+        "exact_ratios": {
+          "me": "-72",
+          "mse": "15189/2",
+          "mae": "37887/512",
+          "pe": "509/512"
+        },
+        "integer_sums": {
+          "signed": -4718592,
+          "absolute": 4849536,
+          "squared": 497713152,
+          "different": 65152
+        }
+      },
+      "python": {
+        "count": 262144,
+        "metrics": {
+          "me": -72.0,
+          "mse": 7594.5,
+          "mae": 73.998046875,
+          "pe": 0.994140625,
+          "max": 31,
+          "min": -191
+        },
+        "exact_ratios": {
+          "me": "-72",
+          "mse": "15189/2",
+          "mae": "37887/512",
+          "pe": "509/512"
+        },
+        "integer_sums": {
+          "signed": -18874368,
+          "absolute": 19398144,
+          "squared": 1990852608,
+          "different": 260608
+        }
+      },
+      "python_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": -72.0,
+          "mse": 7594.5,
+          "mae": 73.998046875,
+          "pe": 0.994140625,
+          "max": 31,
+          "min": -191
+        },
+        "exact_ratios": {
+          "me": "-72",
+          "mse": "15189/2",
+          "mae": "37887/512",
+          "pe": "509/512"
+        },
+        "integer_sums": {
+          "signed": -4718592,
+          "absolute": 4849536,
+          "squared": 497713152,
+          "different": 65152
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lia_03",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_MSE_Best_2",
+      "rtl": "assets/codes/LIA/lia_03.v",
+      "lpl": 8,
+      "width": 9,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 262144,
+        "metrics": {
+          "me": -16.0,
+          "mse": 1706.5,
+          "mae": 31.99609375,
+          "pe": 0.98828125,
+          "max": 63,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "-16",
+          "mse": "3413/2",
+          "mae": "8191/256",
+          "pe": "253/256"
+        },
+        "integer_sums": {
+          "signed": -4194304,
+          "absolute": 8387584,
+          "squared": 447348736,
+          "different": 259072
+        }
+      },
+      "c_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": -16.0,
+          "mse": 1706.5,
+          "mae": 31.99609375,
+          "pe": 0.98828125,
+          "max": 63,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "-16",
+          "mse": "3413/2",
+          "mae": "8191/256",
+          "pe": "253/256"
+        },
+        "integer_sums": {
+          "signed": -1048576,
+          "absolute": 2096896,
+          "squared": 111837184,
+          "different": 64768
+        }
+      },
+      "python": {
+        "count": 262144,
+        "metrics": {
+          "me": -16.0,
+          "mse": 1706.5,
+          "mae": 31.99609375,
+          "pe": 0.98828125,
+          "max": 63,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "-16",
+          "mse": "3413/2",
+          "mae": "8191/256",
+          "pe": "253/256"
+        },
+        "integer_sums": {
+          "signed": -4194304,
+          "absolute": 8387584,
+          "squared": 447348736,
+          "different": 259072
+        }
+      },
+      "python_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": -16.0,
+          "mse": 1706.5,
+          "mae": 31.99609375,
+          "pe": 0.98828125,
+          "max": 63,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "-16",
+          "mse": "3413/2",
+          "mae": "8191/256",
+          "pe": "253/256"
+        },
+        "integer_sums": {
+          "signed": -1048576,
+          "absolute": 2096896,
+          "squared": 111837184,
+          "different": 64768
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lia_04",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_ME_N50_2",
+      "rtl": "assets/codes/LIA/lia_04.v",
+      "lpl": 8,
+      "width": 9,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 262144,
+        "metrics": {
+          "me": 0.5,
+          "mse": 5461.5,
+          "mae": 64.0,
+          "pe": 0.99609375,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/2",
+          "mse": "10923/2",
+          "mae": "64",
+          "pe": "255/256"
+        },
+        "integer_sums": {
+          "signed": 131072,
+          "absolute": 16777216,
+          "squared": 1431699456,
+          "different": 261120
+        }
+      },
+      "c_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.5,
+          "mse": 5461.5,
+          "mae": 64.0,
+          "pe": 0.99609375,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/2",
+          "mse": "10923/2",
+          "mae": "64",
+          "pe": "255/256"
+        },
+        "integer_sums": {
+          "signed": 32768,
+          "absolute": 4194304,
+          "squared": 357924864,
+          "different": 65280
+        }
+      },
+      "python": {
+        "count": 262144,
+        "metrics": {
+          "me": 0.5,
+          "mse": 5461.5,
+          "mae": 64.0,
+          "pe": 0.99609375,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/2",
+          "mse": "10923/2",
+          "mae": "64",
+          "pe": "255/256"
+        },
+        "integer_sums": {
+          "signed": 131072,
+          "absolute": 16777216,
+          "squared": 1431699456,
+          "different": 261120
+        }
+      },
+      "python_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.5,
+          "mse": 5461.5,
+          "mae": 64.0,
+          "pe": 0.99609375,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/2",
+          "mse": "10923/2",
+          "mae": "64",
+          "pe": "255/256"
+        },
+        "integer_sums": {
+          "signed": 32768,
+          "absolute": 4194304,
+          "squared": 357924864,
+          "different": 65280
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lia_05",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_ME_N25_LOA",
+      "rtl": "assets/codes/LIA/lia_05.v",
+      "lpl": 8,
+      "width": 9,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 262144,
+        "metrics": {
+          "me": 0.25,
+          "mse": 4096.0,
+          "mae": 47.875,
+          "pe": 0.8998870849609375,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/4",
+          "mse": "4096",
+          "mae": "383/8",
+          "pe": "58975/65536"
+        },
+        "integer_sums": {
+          "signed": 65536,
+          "absolute": 12550144,
+          "squared": 1073741824,
+          "different": 235900
+        }
+      },
+      "c_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.25,
+          "mse": 4096.0,
+          "mae": 47.875,
+          "pe": 0.8998870849609375,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/4",
+          "mse": "4096",
+          "mae": "383/8",
+          "pe": "58975/65536"
+        },
+        "integer_sums": {
+          "signed": 16384,
+          "absolute": 3137536,
+          "squared": 268435456,
+          "different": 58975
+        }
+      },
+      "python": {
+        "count": 262144,
+        "metrics": {
+          "me": 0.25,
+          "mse": 4096.0,
+          "mae": 47.875,
+          "pe": 0.8998870849609375,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/4",
+          "mse": "4096",
+          "mae": "383/8",
+          "pe": "58975/65536"
+        },
+        "integer_sums": {
+          "signed": 65536,
+          "absolute": 12550144,
+          "squared": 1073741824,
+          "different": 235900
+        }
+      },
+      "python_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.25,
+          "mse": 4096.0,
+          "mae": 47.875,
+          "pe": 0.8998870849609375,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/4",
+          "mse": "4096",
+          "mae": "383/8",
+          "pe": "58975/65536"
+        },
+        "integer_sums": {
+          "signed": 16384,
+          "absolute": 3137536,
+          "squared": 268435456,
+          "different": 58975
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lia_06",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_ME_N25_2",
+      "rtl": "assets/codes/LIA/lia_06.v",
+      "lpl": 8,
+      "width": 9,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 262144,
+        "metrics": {
+          "me": 0.25,
+          "mse": 4096.0,
+          "mae": 47.875,
+          "pe": 0.8998870849609375,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/4",
+          "mse": "4096",
+          "mae": "383/8",
+          "pe": "58975/65536"
+        },
+        "integer_sums": {
+          "signed": 65536,
+          "absolute": 12550144,
+          "squared": 1073741824,
+          "different": 235900
+        }
+      },
+      "c_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.25,
+          "mse": 4096.0,
+          "mae": 47.875,
+          "pe": 0.8998870849609375,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/4",
+          "mse": "4096",
+          "mae": "383/8",
+          "pe": "58975/65536"
+        },
+        "integer_sums": {
+          "signed": 16384,
+          "absolute": 3137536,
+          "squared": 268435456,
+          "different": 58975
+        }
+      },
+      "python": {
+        "count": 262144,
+        "metrics": {
+          "me": 0.25,
+          "mse": 4096.0,
+          "mae": 47.875,
+          "pe": 0.8998870849609375,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/4",
+          "mse": "4096",
+          "mae": "383/8",
+          "pe": "58975/65536"
+        },
+        "integer_sums": {
+          "signed": 65536,
+          "absolute": 12550144,
+          "squared": 1073741824,
+          "different": 235900
+        }
+      },
+      "python_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.25,
+          "mse": 4096.0,
+          "mae": 47.875,
+          "pe": 0.8998870849609375,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/4",
+          "mse": "4096",
+          "mae": "383/8",
+          "pe": "58975/65536"
+        },
+        "integer_sums": {
+          "signed": 16384,
+          "absolute": 3137536,
+          "squared": 268435456,
+          "different": 58975
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lia_07",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_ME_N25_3",
+      "rtl": "assets/codes/LIA/lia_07.v",
+      "lpl": 8,
+      "width": 9,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 262144,
+        "metrics": {
+          "me": 0.25,
+          "mse": 4096.0,
+          "mae": 47.875,
+          "pe": 0.8998870849609375,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/4",
+          "mse": "4096",
+          "mae": "383/8",
+          "pe": "58975/65536"
+        },
+        "integer_sums": {
+          "signed": 65536,
+          "absolute": 12550144,
+          "squared": 1073741824,
+          "different": 235900
+        }
+      },
+      "c_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.25,
+          "mse": 4096.0,
+          "mae": 47.875,
+          "pe": 0.8998870849609375,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/4",
+          "mse": "4096",
+          "mae": "383/8",
+          "pe": "58975/65536"
+        },
+        "integer_sums": {
+          "signed": 16384,
+          "absolute": 3137536,
+          "squared": 268435456,
+          "different": 58975
+        }
+      },
+      "python": {
+        "count": 262144,
+        "metrics": {
+          "me": 0.25,
+          "mse": 4096.0,
+          "mae": 47.875,
+          "pe": 0.8998870849609375,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/4",
+          "mse": "4096",
+          "mae": "383/8",
+          "pe": "58975/65536"
+        },
+        "integer_sums": {
+          "signed": 65536,
+          "absolute": 12550144,
+          "squared": 1073741824,
+          "different": 235900
+        }
+      },
+      "python_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.25,
+          "mse": 4096.0,
+          "mae": 47.875,
+          "pe": 0.8998870849609375,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/4",
+          "mse": "4096",
+          "mae": "383/8",
+          "pe": "58975/65536"
+        },
+        "integer_sums": {
+          "signed": 16384,
+          "absolute": 3137536,
+          "squared": 268435456,
+          "different": 58975
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lia_08",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_ME_N25_4",
+      "rtl": "assets/codes/LIA/lia_08.v",
+      "lpl": 8,
+      "width": 9,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 262144,
+        "metrics": {
+          "me": 0.25,
+          "mse": 4096.0,
+          "mae": 47.875,
+          "pe": 0.8998870849609375,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/4",
+          "mse": "4096",
+          "mae": "383/8",
+          "pe": "58975/65536"
+        },
+        "integer_sums": {
+          "signed": 65536,
+          "absolute": 12550144,
+          "squared": 1073741824,
+          "different": 235900
+        }
+      },
+      "c_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.25,
+          "mse": 4096.0,
+          "mae": 47.875,
+          "pe": 0.8998870849609375,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/4",
+          "mse": "4096",
+          "mae": "383/8",
+          "pe": "58975/65536"
+        },
+        "integer_sums": {
+          "signed": 16384,
+          "absolute": 3137536,
+          "squared": 268435456,
+          "different": 58975
+        }
+      },
+      "python": {
+        "count": 262144,
+        "metrics": {
+          "me": 0.25,
+          "mse": 4096.0,
+          "mae": 47.875,
+          "pe": 0.8998870849609375,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/4",
+          "mse": "4096",
+          "mae": "383/8",
+          "pe": "58975/65536"
+        },
+        "integer_sums": {
+          "signed": 65536,
+          "absolute": 12550144,
+          "squared": 1073741824,
+          "different": 235900
+        }
+      },
+      "python_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.25,
+          "mse": 4096.0,
+          "mae": 47.875,
+          "pe": 0.8998870849609375,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/4",
+          "mse": "4096",
+          "mae": "383/8",
+          "pe": "58975/65536"
+        },
+        "integer_sums": {
+          "signed": 16384,
+          "absolute": 3137536,
+          "squared": 268435456,
+          "different": 58975
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lia_09",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_ME_0_1",
+      "rtl": "assets/codes/LIA/lia_09.v",
+      "lpl": 8,
+      "width": 9,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 262144,
+        "metrics": {
+          "me": 0.0,
+          "mse": 10922.5,
+          "mae": 85.33203125,
+          "pe": 0.99609375,
+          "max": 255,
+          "min": -255
+        },
+        "exact_ratios": {
+          "me": "0",
+          "mse": "21845/2",
+          "mae": "21845/256",
+          "pe": "255/256"
+        },
+        "integer_sums": {
+          "signed": 0,
+          "absolute": 22369280,
+          "squared": 2863267840,
+          "different": 261120
+        }
+      },
+      "c_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.0,
+          "mse": 10922.5,
+          "mae": 85.33203125,
+          "pe": 0.99609375,
+          "max": 255,
+          "min": -255
+        },
+        "exact_ratios": {
+          "me": "0",
+          "mse": "21845/2",
+          "mae": "21845/256",
+          "pe": "255/256"
+        },
+        "integer_sums": {
+          "signed": 0,
+          "absolute": 5592320,
+          "squared": 715816960,
+          "different": 65280
+        }
+      },
+      "python": {
+        "count": 262144,
+        "metrics": {
+          "me": 0.0,
+          "mse": 10922.5,
+          "mae": 85.33203125,
+          "pe": 0.99609375,
+          "max": 255,
+          "min": -255
+        },
+        "exact_ratios": {
+          "me": "0",
+          "mse": "21845/2",
+          "mae": "21845/256",
+          "pe": "255/256"
+        },
+        "integer_sums": {
+          "signed": 0,
+          "absolute": 22369280,
+          "squared": 2863267840,
+          "different": 261120
+        }
+      },
+      "python_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.0,
+          "mse": 10922.5,
+          "mae": 85.33203125,
+          "pe": 0.99609375,
+          "max": 255,
+          "min": -255
+        },
+        "exact_ratios": {
+          "me": "0",
+          "mse": "21845/2",
+          "mae": "21845/256",
+          "pe": "255/256"
+        },
+        "integer_sums": {
+          "signed": 0,
+          "absolute": 5592320,
+          "squared": 715816960,
+          "different": 65280
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lia_10",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_ME_0_2",
+      "rtl": "assets/codes/LIA/lia_10.v",
+      "lpl": 8,
+      "width": 9,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 262144,
+        "metrics": {
+          "me": 0.0,
+          "mse": 4096.0,
+          "mae": 48.0,
+          "pe": 0.933258056640625,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "0",
+          "mse": "4096",
+          "mae": "48",
+          "pe": "30581/32768"
+        },
+        "integer_sums": {
+          "signed": 0,
+          "absolute": 12582912,
+          "squared": 1073741824,
+          "different": 244648
+        }
+      },
+      "c_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.0,
+          "mse": 4096.0,
+          "mae": 48.0,
+          "pe": 0.933258056640625,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "0",
+          "mse": "4096",
+          "mae": "48",
+          "pe": "30581/32768"
+        },
+        "integer_sums": {
+          "signed": 0,
+          "absolute": 3145728,
+          "squared": 268435456,
+          "different": 61162
+        }
+      },
+      "python": {
+        "count": 262144,
+        "metrics": {
+          "me": 0.0,
+          "mse": 4096.0,
+          "mae": 48.0,
+          "pe": 0.933258056640625,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "0",
+          "mse": "4096",
+          "mae": "48",
+          "pe": "30581/32768"
+        },
+        "integer_sums": {
+          "signed": 0,
+          "absolute": 12582912,
+          "squared": 1073741824,
+          "different": 244648
+        }
+      },
+      "python_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.0,
+          "mse": 4096.0,
+          "mae": 48.0,
+          "pe": 0.933258056640625,
+          "max": 128,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "0",
+          "mse": "4096",
+          "mae": "48",
+          "pe": "30581/32768"
+        },
+        "integer_sums": {
+          "signed": 0,
+          "absolute": 3145728,
+          "squared": 268435456,
+          "different": 61162
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lia_11",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_ME_P25",
+      "rtl": "assets/codes/LIA/lia_11.v",
+      "lpl": 8,
+      "width": 9,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 262144,
+        "metrics": {
+          "me": -0.25,
+          "mse": 2730.25,
+          "mae": 42.66015625,
+          "pe": 0.98828125,
+          "max": 126,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "-1/4",
+          "mse": "10921/4",
+          "mae": "10921/256",
+          "pe": "253/256"
+        },
+        "integer_sums": {
+          "signed": -65536,
+          "absolute": 11183104,
+          "squared": 715718656,
+          "different": 259072
+        }
+      },
+      "c_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": -0.25,
+          "mse": 2730.25,
+          "mae": 42.66015625,
+          "pe": 0.98828125,
+          "max": 126,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "-1/4",
+          "mse": "10921/4",
+          "mae": "10921/256",
+          "pe": "253/256"
+        },
+        "integer_sums": {
+          "signed": -16384,
+          "absolute": 2795776,
+          "squared": 178929664,
+          "different": 64768
+        }
+      },
+      "python": {
+        "count": 262144,
+        "metrics": {
+          "me": -0.25,
+          "mse": 2730.25,
+          "mae": 42.66015625,
+          "pe": 0.98828125,
+          "max": 126,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "-1/4",
+          "mse": "10921/4",
+          "mae": "10921/256",
+          "pe": "253/256"
+        },
+        "integer_sums": {
+          "signed": -65536,
+          "absolute": 11183104,
+          "squared": 715718656,
+          "different": 259072
+        }
+      },
+      "python_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": -0.25,
+          "mse": 2730.25,
+          "mae": 42.66015625,
+          "pe": 0.98828125,
+          "max": 126,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "-1/4",
+          "mse": "10921/4",
+          "mae": "10921/256",
+          "pe": "253/256"
+        },
+        "integer_sums": {
+          "signed": -16384,
+          "absolute": 2795776,
+          "squared": 178929664,
+          "different": 64768
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lia_12",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_ME_N50_1",
+      "rtl": "assets/codes/LIA/lia_12.v",
+      "lpl": 8,
+      "width": 9,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 262144,
+        "metrics": {
+          "me": 0.5,
+          "mse": 4096.5,
+          "mae": 47.816741943359375,
+          "pe": 0.933258056640625,
+          "max": 129,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/2",
+          "mse": "8193/2",
+          "mae": "1566859/32768",
+          "pe": "30581/32768"
+        },
+        "integer_sums": {
+          "signed": 131072,
+          "absolute": 12534872,
+          "squared": 1073872896,
+          "different": 244648
+        }
+      },
+      "c_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.5,
+          "mse": 4096.5,
+          "mae": 47.816741943359375,
+          "pe": 0.933258056640625,
+          "max": 129,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/2",
+          "mse": "8193/2",
+          "mae": "1566859/32768",
+          "pe": "30581/32768"
+        },
+        "integer_sums": {
+          "signed": 32768,
+          "absolute": 3133718,
+          "squared": 268468224,
+          "different": 61162
+        }
+      },
+      "python": {
+        "count": 262144,
+        "metrics": {
+          "me": 0.5,
+          "mse": 4096.5,
+          "mae": 47.816741943359375,
+          "pe": 0.933258056640625,
+          "max": 129,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/2",
+          "mse": "8193/2",
+          "mae": "1566859/32768",
+          "pe": "30581/32768"
+        },
+        "integer_sums": {
+          "signed": 131072,
+          "absolute": 12534872,
+          "squared": 1073872896,
+          "different": 244648
+        }
+      },
+      "python_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.5,
+          "mse": 4096.5,
+          "mae": 47.816741943359375,
+          "pe": 0.933258056640625,
+          "max": 129,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "1/2",
+          "mse": "8193/2",
+          "mae": "1566859/32768",
+          "pe": "30581/32768"
+        },
+        "integer_sums": {
+          "signed": 32768,
+          "absolute": 3133718,
+          "squared": 268468224,
+          "different": 61162
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lia_13",
+      "kind": "adder",
+      "function": "unsgn_LFA_21_21_ME_P50",
+      "rtl": "assets/codes/LIA/lia_13.v",
+      "lpl": 8,
+      "width": 9,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 262144,
+        "metrics": {
+          "me": -0.5,
+          "mse": 2729.5,
+          "mae": 42.65234375,
+          "pe": 0.98828125,
+          "max": 125,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "-1/2",
+          "mse": "5459/2",
+          "mae": "10919/256",
+          "pe": "253/256"
+        },
+        "integer_sums": {
+          "signed": -131072,
+          "absolute": 11181056,
+          "squared": 715522048,
+          "different": 259072
+        }
+      },
+      "c_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": -0.5,
+          "mse": 2729.5,
+          "mae": 42.65234375,
+          "pe": 0.98828125,
+          "max": 125,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "-1/2",
+          "mse": "5459/2",
+          "mae": "10919/256",
+          "pe": "253/256"
+        },
+        "integer_sums": {
+          "signed": -32768,
+          "absolute": 2795264,
+          "squared": 178880512,
+          "different": 64768
+        }
+      },
+      "python": {
+        "count": 262144,
+        "metrics": {
+          "me": -0.5,
+          "mse": 2729.5,
+          "mae": 42.65234375,
+          "pe": 0.98828125,
+          "max": 125,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "-1/2",
+          "mse": "5459/2",
+          "mae": "10919/256",
+          "pe": "253/256"
+        },
+        "integer_sums": {
+          "signed": -131072,
+          "absolute": 11181056,
+          "squared": 715522048,
+          "different": 259072
+        }
+      },
+      "python_subset": {
+        "count": 65536,
+        "metrics": {
+          "me": -0.5,
+          "mse": 2729.5,
+          "mae": 42.65234375,
+          "pe": 0.98828125,
+          "max": 125,
+          "min": -127
+        },
+        "exact_ratios": {
+          "me": "-1/2",
+          "mse": "5459/2",
+          "mae": "10919/256",
+          "pe": "253/256"
+        },
+        "integer_sums": {
+          "signed": -32768,
+          "absolute": 2795264,
+          "squared": 178880512,
+          "different": 64768
+        }
+      },
+      "status": "passed"
+    }
+  ],
+  "status": "passed",
+  "compiler_diagnostics": "In file included from C:\\Users\\user\\AppData\\Local\\Temp\\lia-lim-validation-91kuman0\\baseline_driver.c:8:0:\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c: In function 'SliceNumber':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:12:53: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  if ((Number > pow(2, NumberLength) - 1) || (Number < 0))\n                                                     ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:17:99: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  if ((LowerBit > NumberLength) || (UpperBit > NumberLength) || (LowerBit > UpperBit) || (LowerBit < 0) || (UpperBit < 0))\n                                                                                                   ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:17:117: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  if ((LowerBit > NumberLength) || (UpperBit > NumberLength) || (LowerBit > UpperBit) || (LowerBit < 0) || (UpperBit < 0))\n                                                                                                                     ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:10:7: warning: unused variable 'str' [-Wunused-variable]\n  char str[256];\n       ^~~\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c: In function 'unsgn_add_incWL':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:28:75: warning: unused parameter 'WL_a' [-Wunused-parameter]\n unsigned int unsgn_add_incWL(unsigned int a, unsigned int b, unsigned int WL_a,\n                                                                           ^~~~\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:29:22: warning: unused parameter 'WL_b' [-Wunused-parameter]\n         unsigned int WL_b)\n                      ^~~~\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c: In function 'unsgn_LFA_21_21_ME_Best':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:80:52: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  if ((Input1 > pow(2, InputLength) - 1) || (Input1 < 0))\n                                                    ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:88:57: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  else if ((Input2 > pow(2, InputLength) - 1) || (Input2 < 0))\n                                                         ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c: In function 'unsgn_LFA_21_21_MAE_PE_Best':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:192:52: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  if ((Input1 > pow(2, InputLength) - 1) || (Input1 < 0))\n                                                    ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:200:57: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  else if ((Input2 > pow(2, InputLength) - 1) || (Input2 < 0))\n                                                         ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c: In function 'unsgn_LFA_21_21_MSE_Best':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:279:52: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  if ((Input1 > pow(2, InputLength) - 1) || (Input1 < 0))\n                                                    ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:287:57: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  else if ((Input2 > pow(2, InputLength) - 1) || (Input2 < 0))\n                                                         ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c: In function 'unsgn_LFA_21_21_MSE_Best_2':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:378:52: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  if ((Input1 > pow(2, InputLength) - 1) || (Input1 < 0))\n                                                    ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:386:57: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  else if ((Input2 > pow(2, InputLength) - 1) || (Input2 < 0))\n                                                         ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c: In function 'unsgn_LFA_21_21_ME_0_1':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:475:52: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  if ((Input1 > pow(2, InputLength) - 1) || (Input1 < 0))\n                                                    ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:482:57: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  else if ((Input2 > pow(2, InputLength) - 1) || (Input2 < 0))\n                                                         ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c: In function 'unsgn_LFA_21_21_ME_0_2':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:536:52: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  if ((Input1 > pow(2, InputLength) - 1) || (Input1 < 0))\n                                                    ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:544:57: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  else if ((Input2 > pow(2, InputLength) - 1) || (Input2 < 0))\n                                                         ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c: In function 'unsgn_LFA_21_21_ME_P25':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:634:52: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  if ((Input1 > pow(2, InputLength) - 1) || (Input1 < 0))\n                                                    ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:642:57: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  else if ((Input2 > pow(2, InputLength) - 1) || (Input2 < 0))\n                                                         ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c: In function 'unsgn_LFA_21_21_ME_N25_LOA':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:730:52: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  if ((Input1 > pow(2, InputLength) - 1) || (Input1 < 0))\n                                                    ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:737:57: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  else if ((Input2 > pow(2, InputLength) - 1) || (Input2 < 0))\n                                                         ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c: In function 'unsgn_LFA_21_21_ME_N25_2':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:831:52: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  if ((Input1 > pow(2, InputLength) - 1) || (Input1 < 0))\n                                                    ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:839:57: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  else if ((Input2 > pow(2, InputLength) - 1) || (Input2 < 0))\n                                                         ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c: In function 'unsgn_LFA_21_21_ME_N25_3':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:923:52: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  if ((Input1 > pow(2, InputLength) - 1) || (Input1 < 0))\n                                                    ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:931:57: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  else if ((Input2 > pow(2, InputLength) - 1) || (Input2 < 0))\n                                                         ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c: In function 'unsgn_LFA_21_21_ME_N25_4':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:1018:52: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  if ((Input1 > pow(2, InputLength) - 1) || (Input1 < 0))\n                                                    ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:1026:57: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  else if ((Input2 > pow(2, InputLength) - 1) || (Input2 < 0))\n                                                         ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c: In function 'unsgn_LFA_21_21_ME_P50':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:1113:52: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  if ((Input1 > pow(2, InputLength) - 1) || (Input1 < 0))\n                                                    ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:1121:57: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  else if ((Input2 > pow(2, InputLength) - 1) || (Input2 < 0))\n                                                         ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c: In function 'unsgn_LFA_21_21_ME_N50_1':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:1220:52: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  if ((Input1 > pow(2, InputLength) - 1) || (Input1 < 0))\n                                                    ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:1228:57: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  else if ((Input2 > pow(2, InputLength) - 1) || (Input2 < 0))\n                                                         ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c: In function 'unsgn_LFA_21_21_ME_N50_2':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:1317:52: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  if ((Input1 > pow(2, InputLength) - 1) || (Input1 < 0))\n                                                    ^\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFAs.c:1324:57: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]\n  else if ((Input2 > pow(2, InputLength) - 1) || (Input2 < 0))\n                                                         ^\nC:\\Users\\user\\AppData\\Local\\Temp\\lia-lim-validation-91kuman0\\baseline_driver.c: In function 'main':\nC:\\Users\\user\\AppData\\Local\\Temp\\lia-lim-validation-91kuman0\\baseline_driver.c:16:12: warning: implicit declaration of function '_fileno' [-Wimplicit-function-declaration]\n   _setmode(_fileno(stdout),_O_BINARY);\n            ^~~~~~~\n",
+  "total_pairs": 3670016
+}

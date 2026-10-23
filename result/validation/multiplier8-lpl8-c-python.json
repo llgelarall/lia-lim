@@ -1,0 +1,1373 @@
+{
+  "kind": "multiplier",
+  "width": 8,
+  "lpl_values": [
+    8
+  ],
+  "input_domain": "all ordered pairs of unsigned integers 0..255",
+  "subset_domain": "all ordered pairs 0..127",
+  "sign": "approximate-exact",
+  "normalization": "none; PE is a fraction",
+  "baseline": "assets/codes/LFMs.c",
+  "baseline_sha256": "d495194d117cc25e1920651d888c245bb454b10092c23a8648ce709b96b9e1a6",
+  "python_source": "assets/codes/LIMs.ipynb",
+  "python_source_sha256": "a7c3190167c819b74497a454879197b0c4336c581a2c89e0dec6a5a441bbffda",
+  "toolchain": {
+    "python": "3.12.8",
+    "compiler": "gcc.exe (MinGW.org GCC-6.3.0-1) 6.3.0",
+    "compiler_target": "mingw32",
+    "compiler_flags": [
+      "-std=c99",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-lm"
+    ]
+  },
+  "evaluator": "tools/validate_models.py",
+  "evaluator_sha256": "549aaf9b12c0405df6d4e21e822f5e38d1e193ed55752ca4d58b4ae759f13849",
+  "configurations": [
+    {
+      "id": "lim_best_mae",
+      "kind": "multiplier",
+      "function": "unsgn_LFM_Best_MAE",
+      "rtl": "assets/codes/LIM/lim_best_mae.v",
+      "lpl": 8,
+      "width": 8,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 65536,
+        "metrics": {
+          "me": -257.5,
+          "mse": 122030.5,
+          "mae": 278.25299072265625,
+          "pe": 0.9805908203125,
+          "max": 254,
+          "min": -1538
+        },
+        "exact_ratios": {
+          "me": "-515/2",
+          "mse": "244061/2",
+          "mae": "4558897/16384",
+          "pe": "8033/8192"
+        },
+        "integer_sums": {
+          "signed": -16875520,
+          "absolute": 18235588,
+          "squared": 7997390848,
+          "different": 64264
+        }
+      },
+      "c_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -289.5,
+          "mse": 130382.5,
+          "mae": 294.9521484375,
+          "pe": 0.9761962890625,
+          "max": 126,
+          "min": -1410
+        },
+        "exact_ratios": {
+          "me": "-579/2",
+          "mse": "260765/2",
+          "mae": "302031/1024",
+          "pe": "7997/8192"
+        },
+        "integer_sums": {
+          "signed": -4743168,
+          "absolute": 4832496,
+          "squared": 2136186880,
+          "different": 15994
+        }
+      },
+      "python": {
+        "count": 65536,
+        "metrics": {
+          "me": -257.5,
+          "mse": 122030.5,
+          "mae": 278.25299072265625,
+          "pe": 0.9805908203125,
+          "max": 254,
+          "min": -1538
+        },
+        "exact_ratios": {
+          "me": "-515/2",
+          "mse": "244061/2",
+          "mae": "4558897/16384",
+          "pe": "8033/8192"
+        },
+        "integer_sums": {
+          "signed": -16875520,
+          "absolute": 18235588,
+          "squared": 7997390848,
+          "different": 64264
+        }
+      },
+      "python_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -289.5,
+          "mse": 130382.5,
+          "mae": 294.9521484375,
+          "pe": 0.9761962890625,
+          "max": 126,
+          "min": -1410
+        },
+        "exact_ratios": {
+          "me": "-579/2",
+          "mse": "260765/2",
+          "mae": "302031/1024",
+          "pe": "7997/8192"
+        },
+        "integer_sums": {
+          "signed": -4743168,
+          "absolute": 4832496,
+          "squared": 2136186880,
+          "different": 15994
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lim_best_pe",
+      "kind": "multiplier",
+      "function": "unsgn_LFM_Best_PE",
+      "rtl": "assets/codes/LIM/lim_best_pe.v",
+      "lpl": 8,
+      "width": 8,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 65536,
+        "metrics": {
+          "me": -258.0,
+          "mse": 122416.5,
+          "mae": 278.716064453125,
+          "pe": 0.980255126953125,
+          "max": 254,
+          "min": -1540
+        },
+        "exact_ratios": {
+          "me": "-258",
+          "mse": "244833/2",
+          "mae": "1141621/4096",
+          "pe": "32121/32768"
+        },
+        "integer_sums": {
+          "signed": -16908288,
+          "absolute": 18265936,
+          "squared": 8022687744,
+          "different": 64242
+        }
+      },
+      "c_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -290.0,
+          "mse": 130800.5,
+          "mae": 295.4521484375,
+          "pe": 0.9761962890625,
+          "max": 126,
+          "min": -1412
+        },
+        "exact_ratios": {
+          "me": "-290",
+          "mse": "261601/2",
+          "mae": "302543/1024",
+          "pe": "7997/8192"
+        },
+        "integer_sums": {
+          "signed": -4751360,
+          "absolute": 4840688,
+          "squared": 2143035392,
+          "different": 15994
+        }
+      },
+      "python": {
+        "count": 65536,
+        "metrics": {
+          "me": -258.0,
+          "mse": 122416.5,
+          "mae": 278.716064453125,
+          "pe": 0.980255126953125,
+          "max": 254,
+          "min": -1540
+        },
+        "exact_ratios": {
+          "me": "-258",
+          "mse": "244833/2",
+          "mae": "1141621/4096",
+          "pe": "32121/32768"
+        },
+        "integer_sums": {
+          "signed": -16908288,
+          "absolute": 18265936,
+          "squared": 8022687744,
+          "different": 64242
+        }
+      },
+      "python_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -290.0,
+          "mse": 130800.5,
+          "mae": 295.4521484375,
+          "pe": 0.9761962890625,
+          "max": 126,
+          "min": -1412
+        },
+        "exact_ratios": {
+          "me": "-290",
+          "mse": "261601/2",
+          "mae": "302543/1024",
+          "pe": "7997/8192"
+        },
+        "integer_sums": {
+          "signed": -4751360,
+          "absolute": 4840688,
+          "squared": 2143035392,
+          "different": 15994
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lim_equal_arch_me_p25",
+      "kind": "multiplier",
+      "function": "unsgn_LFM_Equal_Arch_ME_P25",
+      "rtl": "assets/codes/LIM/lim_equal_arch_me_p25.v",
+      "lpl": 8,
+      "width": 8,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 65536,
+        "metrics": {
+          "me": -0.25,
+          "mse": 607182.25,
+          "mae": 640.1250305175781,
+          "pe": 0.984375,
+          "max": 1792,
+          "min": -1665
+        },
+        "exact_ratios": {
+          "me": "-1/4",
+          "mse": "2428729/4",
+          "mae": "20975617/32768",
+          "pe": "63/64"
+        },
+        "integer_sums": {
+          "signed": -16384,
+          "absolute": 41951234,
+          "squared": 39792295936,
+          "different": 64512
+        }
+      },
+      "c_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -384.25,
+          "mse": 199854.25,
+          "mae": 384.25,
+          "pe": 0.9765625,
+          "max": 0,
+          "min": -1537
+        },
+        "exact_ratios": {
+          "me": "-1537/4",
+          "mse": "799417/4",
+          "mae": "1537/4",
+          "pe": "125/128"
+        },
+        "integer_sums": {
+          "signed": -6295552,
+          "absolute": 6295552,
+          "squared": 3274412032,
+          "different": 16000
+        }
+      },
+      "python": {
+        "count": 65536,
+        "metrics": {
+          "me": -0.25,
+          "mse": 607182.25,
+          "mae": 640.1250305175781,
+          "pe": 0.984375,
+          "max": 1792,
+          "min": -1665
+        },
+        "exact_ratios": {
+          "me": "-1/4",
+          "mse": "2428729/4",
+          "mae": "20975617/32768",
+          "pe": "63/64"
+        },
+        "integer_sums": {
+          "signed": -16384,
+          "absolute": 41951234,
+          "squared": 39792295936,
+          "different": 64512
+        }
+      },
+      "python_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -384.25,
+          "mse": 199854.25,
+          "mae": 384.25,
+          "pe": 0.9765625,
+          "max": 0,
+          "min": -1537
+        },
+        "exact_ratios": {
+          "me": "-1537/4",
+          "mse": "799417/4",
+          "mae": "1537/4",
+          "pe": "125/128"
+        },
+        "integer_sums": {
+          "signed": -6295552,
+          "absolute": 6295552,
+          "squared": 3274412032,
+          "different": 16000
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lim_equal_arch_me_p50",
+      "kind": "multiplier",
+      "function": "unsgn_LFM_Equal_Arch_ME_P50",
+      "rtl": "assets/codes/LIM/lim_equal_arch_me_p50.v",
+      "lpl": 8,
+      "width": 8,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 65536,
+        "metrics": {
+          "me": -0.5,
+          "mse": 522522.5,
+          "mae": 592.6803588867188,
+          "pe": 0.985626220703125,
+          "max": 1776,
+          "min": -1538
+        },
+        "exact_ratios": {
+          "me": "-1/2",
+          "mse": "1045045/2",
+          "mae": "9710475/16384",
+          "pe": "32297/32768"
+        },
+        "integer_sums": {
+          "signed": -32768,
+          "absolute": 38841900,
+          "squared": 34244034560,
+          "different": 64594
+        }
+      },
+      "c_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -352.5,
+          "mse": 170682.5,
+          "mae": 353.07373046875,
+          "pe": 0.9766845703125,
+          "max": 112,
+          "min": -1410
+        },
+        "exact_ratios": {
+          "me": "-705/2",
+          "mse": "341365/2",
+          "mae": "723095/2048",
+          "pe": "8001/8192"
+        },
+        "integer_sums": {
+          "signed": -5775360,
+          "absolute": 5784760,
+          "squared": 2796462080,
+          "different": 16002
+        }
+      },
+      "python": {
+        "count": 65536,
+        "metrics": {
+          "me": -0.5,
+          "mse": 522522.5,
+          "mae": 592.6803588867188,
+          "pe": 0.985626220703125,
+          "max": 1776,
+          "min": -1538
+        },
+        "exact_ratios": {
+          "me": "-1/2",
+          "mse": "1045045/2",
+          "mae": "9710475/16384",
+          "pe": "32297/32768"
+        },
+        "integer_sums": {
+          "signed": -32768,
+          "absolute": 38841900,
+          "squared": 34244034560,
+          "different": 64594
+        }
+      },
+      "python_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -352.5,
+          "mse": 170682.5,
+          "mae": 353.07373046875,
+          "pe": 0.9766845703125,
+          "max": 112,
+          "min": -1410
+        },
+        "exact_ratios": {
+          "me": "-705/2",
+          "mse": "341365/2",
+          "mae": "723095/2048",
+          "pe": "8001/8192"
+        },
+        "integer_sums": {
+          "signed": -5775360,
+          "absolute": 5784760,
+          "squared": 2796462080,
+          "different": 16002
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lim_equal_arch_mse",
+      "kind": "multiplier",
+      "function": "unsgn_LFM_Equal_Arch_MSE",
+      "rtl": "assets/codes/LIM/lim_equal_arch_mse.v",
+      "lpl": 8,
+      "width": 8,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 65536,
+        "metrics": {
+          "me": -257.0,
+          "mse": 121773.5,
+          "mae": 277.8731689453125,
+          "pe": 0.991973876953125,
+          "max": 255,
+          "min": -1538
+        },
+        "exact_ratios": {
+          "me": "-257",
+          "mse": "243547/2",
+          "mae": "2276337/8192",
+          "pe": "32505/32768"
+        },
+        "integer_sums": {
+          "signed": -16842752,
+          "absolute": 18210696,
+          "squared": 7980548096,
+          "different": 65010
+        }
+      },
+      "c_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -289.0,
+          "mse": 130093.5,
+          "mae": 294.528564453125,
+          "pe": 0.9892578125,
+          "max": 127,
+          "min": -1410
+        },
+        "exact_ratios": {
+          "me": "-289",
+          "mse": "260187/2",
+          "mae": "1206389/4096",
+          "pe": "1013/1024"
+        },
+        "integer_sums": {
+          "signed": -4734976,
+          "absolute": 4825556,
+          "squared": 2131451904,
+          "different": 16208
+        }
+      },
+      "python": {
+        "count": 65536,
+        "metrics": {
+          "me": -257.0,
+          "mse": 121773.5,
+          "mae": 277.8731689453125,
+          "pe": 0.991973876953125,
+          "max": 255,
+          "min": -1538
+        },
+        "exact_ratios": {
+          "me": "-257",
+          "mse": "243547/2",
+          "mae": "2276337/8192",
+          "pe": "32505/32768"
+        },
+        "integer_sums": {
+          "signed": -16842752,
+          "absolute": 18210696,
+          "squared": 7980548096,
+          "different": 65010
+        }
+      },
+      "python_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -289.0,
+          "mse": 130093.5,
+          "mae": 294.528564453125,
+          "pe": 0.9892578125,
+          "max": 127,
+          "min": -1410
+        },
+        "exact_ratios": {
+          "me": "-289",
+          "mse": "260187/2",
+          "mae": "1206389/4096",
+          "pe": "1013/1024"
+        },
+        "integer_sums": {
+          "signed": -4734976,
+          "absolute": 4825556,
+          "squared": 2131451904,
+          "different": 16208
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lim_equal_arch_pe",
+      "kind": "multiplier",
+      "function": "unsgn_LFM_Equal_Arch_PE",
+      "rtl": "assets/codes/LIM/lim_equal_arch_pe.v",
+      "lpl": 8,
+      "width": 8,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 65536,
+        "metrics": {
+          "me": -384.5,
+          "mse": 203418.5,
+          "mae": 387.13238525390625,
+          "pe": 0.981048583984375,
+          "max": 240,
+          "min": -1538
+        },
+        "exact_ratios": {
+          "me": "-769/2",
+          "mse": "406837/2",
+          "mae": "6342777/16384",
+          "pe": "32147/32768"
+        },
+        "integer_sums": {
+          "signed": -25198592,
+          "absolute": 25371108,
+          "squared": 13331234816,
+          "different": 64294
+        }
+      },
+      "c_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -352.5,
+          "mse": 170682.5,
+          "mae": 353.07373046875,
+          "pe": 0.9766845703125,
+          "max": 112,
+          "min": -1410
+        },
+        "exact_ratios": {
+          "me": "-705/2",
+          "mse": "341365/2",
+          "mae": "723095/2048",
+          "pe": "8001/8192"
+        },
+        "integer_sums": {
+          "signed": -5775360,
+          "absolute": 5784760,
+          "squared": 2796462080,
+          "different": 16002
+        }
+      },
+      "python": {
+        "count": 65536,
+        "metrics": {
+          "me": -384.5,
+          "mse": 203418.5,
+          "mae": 387.13238525390625,
+          "pe": 0.981048583984375,
+          "max": 240,
+          "min": -1538
+        },
+        "exact_ratios": {
+          "me": "-769/2",
+          "mse": "406837/2",
+          "mae": "6342777/16384",
+          "pe": "32147/32768"
+        },
+        "integer_sums": {
+          "signed": -25198592,
+          "absolute": 25371108,
+          "squared": 13331234816,
+          "different": 64294
+        }
+      },
+      "python_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -352.5,
+          "mse": 170682.5,
+          "mae": 353.07373046875,
+          "pe": 0.9766845703125,
+          "max": 112,
+          "min": -1410
+        },
+        "exact_ratios": {
+          "me": "-705/2",
+          "mse": "341365/2",
+          "mae": "723095/2048",
+          "pe": "8001/8192"
+        },
+        "integer_sums": {
+          "signed": -5775360,
+          "absolute": 5784760,
+          "squared": 2796462080,
+          "different": 16002
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lim_me_0",
+      "kind": "multiplier",
+      "function": "unsgn_LFM_ME_0",
+      "rtl": "assets/codes/LIM/lim_me_0.v",
+      "lpl": 8,
+      "width": 8,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.0,
+          "mse": 268570.5,
+          "mae": 412.10333251953125,
+          "pe": 0.9954833984375,
+          "max": 1392,
+          "min": -1410
+        },
+        "exact_ratios": {
+          "me": "0",
+          "mse": "537141/2",
+          "mae": "6751901/16384",
+          "pe": "8155/8192"
+        },
+        "integer_sums": {
+          "signed": 0,
+          "absolute": 27007604,
+          "squared": 17601036288,
+          "different": 65240
+        }
+      },
+      "c_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -224.0,
+          "mse": 96602.5,
+          "mae": 244.68798828125,
+          "pe": 0.9940185546875,
+          "max": 240,
+          "min": -1282
+        },
+        "exact_ratios": {
+          "me": "-224",
+          "mse": "193205/2",
+          "mae": "501121/2048",
+          "pe": "8143/8192"
+        },
+        "integer_sums": {
+          "signed": -3670016,
+          "absolute": 4008968,
+          "squared": 1582735360,
+          "different": 16286
+        }
+      },
+      "python": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.0,
+          "mse": 268570.5,
+          "mae": 412.10333251953125,
+          "pe": 0.9954833984375,
+          "max": 1392,
+          "min": -1410
+        },
+        "exact_ratios": {
+          "me": "0",
+          "mse": "537141/2",
+          "mae": "6751901/16384",
+          "pe": "8155/8192"
+        },
+        "integer_sums": {
+          "signed": 0,
+          "absolute": 27007604,
+          "squared": 17601036288,
+          "different": 65240
+        }
+      },
+      "python_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -224.0,
+          "mse": 96602.5,
+          "mae": 244.68798828125,
+          "pe": 0.9940185546875,
+          "max": 240,
+          "min": -1282
+        },
+        "exact_ratios": {
+          "me": "-224",
+          "mse": "193205/2",
+          "mae": "501121/2048",
+          "pe": "8143/8192"
+        },
+        "integer_sums": {
+          "signed": -3670016,
+          "absolute": 4008968,
+          "squared": 1582735360,
+          "different": 16286
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lim_me_n25",
+      "kind": "multiplier",
+      "function": "unsgn_LFM_ME_N25",
+      "rtl": "assets/codes/LIM/lim_me_n25.v",
+      "lpl": 8,
+      "width": 8,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.25,
+          "mse": 268571.75,
+          "mae": 412.01190185546875,
+          "pe": 0.9932708740234375,
+          "max": 1392,
+          "min": -1410
+        },
+        "exact_ratios": {
+          "me": "1/4",
+          "mse": "1074287/4",
+          "mae": "6750403/16384",
+          "pe": "65095/65536"
+        },
+        "integer_sums": {
+          "signed": 16384,
+          "absolute": 27001612,
+          "squared": 17601118208,
+          "different": 65095
+        }
+      },
+      "c_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -223.75,
+          "mse": 96491.75,
+          "mae": 244.4927978515625,
+          "pe": 0.99212646484375,
+          "max": 240,
+          "min": -1282
+        },
+        "exact_ratios": {
+          "me": "-895/4",
+          "mse": "385967/4",
+          "mae": "2002885/8192",
+          "pe": "16255/16384"
+        },
+        "integer_sums": {
+          "signed": -3665920,
+          "absolute": 4005770,
+          "squared": 1580920832,
+          "different": 16255
+        }
+      },
+      "python": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.25,
+          "mse": 268571.75,
+          "mae": 412.01190185546875,
+          "pe": 0.9932708740234375,
+          "max": 1392,
+          "min": -1410
+        },
+        "exact_ratios": {
+          "me": "1/4",
+          "mse": "1074287/4",
+          "mae": "6750403/16384",
+          "pe": "65095/65536"
+        },
+        "integer_sums": {
+          "signed": 16384,
+          "absolute": 27001612,
+          "squared": 17601118208,
+          "different": 65095
+        }
+      },
+      "python_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -223.75,
+          "mse": 96491.75,
+          "mae": 244.4927978515625,
+          "pe": 0.99212646484375,
+          "max": 240,
+          "min": -1282
+        },
+        "exact_ratios": {
+          "me": "-895/4",
+          "mse": "385967/4",
+          "mae": "2002885/8192",
+          "pe": "16255/16384"
+        },
+        "integer_sums": {
+          "signed": -3665920,
+          "absolute": 4005770,
+          "squared": 1580920832,
+          "different": 16255
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lim_me_n50",
+      "kind": "multiplier",
+      "function": "unsgn_LFM_ME_N50",
+      "rtl": "assets/codes/LIM/lim_me_n50.v",
+      "lpl": 8,
+      "width": 8,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.5,
+          "mse": 268579.5,
+          "mae": 411.93218994140625,
+          "pe": 0.991607666015625,
+          "max": 1392,
+          "min": -1410
+        },
+        "exact_ratios": {
+          "me": "1/2",
+          "mse": "537159/2",
+          "mae": "6749097/16384",
+          "pe": "32493/32768"
+        },
+        "integer_sums": {
+          "signed": 32768,
+          "absolute": 26996388,
+          "squared": 17601626112,
+          "different": 64986
+        }
+      },
+      "c_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -223.5,
+          "mse": 96387.5,
+          "mae": 244.31640625,
+          "pe": 0.99053955078125,
+          "max": 240,
+          "min": -1282
+        },
+        "exact_ratios": {
+          "me": "-447/2",
+          "mse": "192775/2",
+          "mae": "62545/256",
+          "pe": "16229/16384"
+        },
+        "integer_sums": {
+          "signed": -3661824,
+          "absolute": 4002880,
+          "squared": 1579212800,
+          "different": 16229
+        }
+      },
+      "python": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.5,
+          "mse": 268579.5,
+          "mae": 411.93218994140625,
+          "pe": 0.991607666015625,
+          "max": 1392,
+          "min": -1410
+        },
+        "exact_ratios": {
+          "me": "1/2",
+          "mse": "537159/2",
+          "mae": "6749097/16384",
+          "pe": "32493/32768"
+        },
+        "integer_sums": {
+          "signed": 32768,
+          "absolute": 26996388,
+          "squared": 17601626112,
+          "different": 64986
+        }
+      },
+      "python_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -223.5,
+          "mse": 96387.5,
+          "mae": 244.31640625,
+          "pe": 0.99053955078125,
+          "max": 240,
+          "min": -1282
+        },
+        "exact_ratios": {
+          "me": "-447/2",
+          "mse": "192775/2",
+          "mae": "62545/256",
+          "pe": "16229/16384"
+        },
+        "integer_sums": {
+          "signed": -3661824,
+          "absolute": 4002880,
+          "squared": 1579212800,
+          "different": 16229
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lim_me_n75",
+      "kind": "multiplier",
+      "function": "unsgn_LFM_ME_N75",
+      "rtl": "assets/codes/LIM/lim_me_n75.v",
+      "lpl": 8,
+      "width": 8,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.75,
+          "mse": 268580.0,
+          "mae": 411.84564208984375,
+          "pe": 0.9932403564453125,
+          "max": 1392,
+          "min": -1410
+        },
+        "exact_ratios": {
+          "me": "3/4",
+          "mse": "268580",
+          "mae": "6747679/16384",
+          "pe": "65093/65536"
+        },
+        "integer_sums": {
+          "signed": 49152,
+          "absolute": 26990716,
+          "squared": 17601658880,
+          "different": 65093
+        }
+      },
+      "c_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -223.25,
+          "mse": 96276.0,
+          "mae": 244.1373291015625,
+          "pe": 0.991943359375,
+          "max": 240,
+          "min": -1282
+        },
+        "exact_ratios": {
+          "me": "-893/4",
+          "mse": "96276",
+          "mae": "1999973/8192",
+          "pe": "4063/4096"
+        },
+        "integer_sums": {
+          "signed": -3657728,
+          "absolute": 3999946,
+          "squared": 1577385984,
+          "different": 16252
+        }
+      },
+      "python": {
+        "count": 65536,
+        "metrics": {
+          "me": 0.75,
+          "mse": 268580.0,
+          "mae": 411.84564208984375,
+          "pe": 0.9932403564453125,
+          "max": 1392,
+          "min": -1410
+        },
+        "exact_ratios": {
+          "me": "3/4",
+          "mse": "268580",
+          "mae": "6747679/16384",
+          "pe": "65093/65536"
+        },
+        "integer_sums": {
+          "signed": 49152,
+          "absolute": 26990716,
+          "squared": 17601658880,
+          "different": 65093
+        }
+      },
+      "python_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -223.25,
+          "mse": 96276.0,
+          "mae": 244.1373291015625,
+          "pe": 0.991943359375,
+          "max": 240,
+          "min": -1282
+        },
+        "exact_ratios": {
+          "me": "-893/4",
+          "mse": "96276",
+          "mae": "1999973/8192",
+          "pe": "4063/4096"
+        },
+        "integer_sums": {
+          "signed": -3657728,
+          "absolute": 3999946,
+          "squared": 1577385984,
+          "different": 16252
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lim_me_p25",
+      "kind": "multiplier",
+      "function": "unsgn_LFM_ME_P25",
+      "rtl": "assets/codes/LIM/lim_me_p25.v",
+      "lpl": 8,
+      "width": 8,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 65536,
+        "metrics": {
+          "me": -0.25,
+          "mse": 268570.5,
+          "mae": 412.19000244140625,
+          "pe": 0.9925994873046875,
+          "max": 1392,
+          "min": -1410
+        },
+        "exact_ratios": {
+          "me": "-1/4",
+          "mse": "537141/2",
+          "mae": "6753321/16384",
+          "pe": "65051/65536"
+        },
+        "integer_sums": {
+          "signed": -16384,
+          "absolute": 27013284,
+          "squared": 17601036288,
+          "different": 65051
+        }
+      },
+      "c_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -224.25,
+          "mse": 96714.5,
+          "mae": 244.8673095703125,
+          "pe": 0.9913330078125,
+          "max": 240,
+          "min": -1282
+        },
+        "exact_ratios": {
+          "me": "-897/4",
+          "mse": "193429/2",
+          "mae": "2005953/8192",
+          "pe": "8121/8192"
+        },
+        "integer_sums": {
+          "signed": -3674112,
+          "absolute": 4011906,
+          "squared": 1584570368,
+          "different": 16242
+        }
+      },
+      "python": {
+        "count": 65536,
+        "metrics": {
+          "me": -0.25,
+          "mse": 268570.5,
+          "mae": 412.19000244140625,
+          "pe": 0.9925994873046875,
+          "max": 1392,
+          "min": -1410
+        },
+        "exact_ratios": {
+          "me": "-1/4",
+          "mse": "537141/2",
+          "mae": "6753321/16384",
+          "pe": "65051/65536"
+        },
+        "integer_sums": {
+          "signed": -16384,
+          "absolute": 27013284,
+          "squared": 17601036288,
+          "different": 65051
+        }
+      },
+      "python_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -224.25,
+          "mse": 96714.5,
+          "mae": 244.8673095703125,
+          "pe": 0.9913330078125,
+          "max": 240,
+          "min": -1282
+        },
+        "exact_ratios": {
+          "me": "-897/4",
+          "mse": "193429/2",
+          "mae": "2005953/8192",
+          "pe": "8121/8192"
+        },
+        "integer_sums": {
+          "signed": -3674112,
+          "absolute": 4011906,
+          "squared": 1584570368,
+          "different": 16242
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lim_me_p50",
+      "kind": "multiplier",
+      "function": "unsgn_LFM_ME_P50",
+      "rtl": "assets/codes/LIM/lim_me_p50.v",
+      "lpl": 8,
+      "width": 8,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 65536,
+        "metrics": {
+          "me": -0.5,
+          "mse": 268570.5,
+          "mae": 412.27667236328125,
+          "pe": 0.989715576171875,
+          "max": 1392,
+          "min": -1410
+        },
+        "exact_ratios": {
+          "me": "-1/2",
+          "mse": "537141/2",
+          "mae": "6754741/16384",
+          "pe": "32431/32768"
+        },
+        "integer_sums": {
+          "signed": -32768,
+          "absolute": 27018964,
+          "squared": 17601036288,
+          "different": 64862
+        }
+      },
+      "c_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -224.5,
+          "mse": 96826.5,
+          "mae": 245.046630859375,
+          "pe": 0.9886474609375,
+          "max": 240,
+          "min": -1282
+        },
+        "exact_ratios": {
+          "me": "-449/2",
+          "mse": "193653/2",
+          "mae": "1003711/4096",
+          "pe": "8099/8192"
+        },
+        "integer_sums": {
+          "signed": -3678208,
+          "absolute": 4014844,
+          "squared": 1586405376,
+          "different": 16198
+        }
+      },
+      "python": {
+        "count": 65536,
+        "metrics": {
+          "me": -0.5,
+          "mse": 268570.5,
+          "mae": 412.27667236328125,
+          "pe": 0.989715576171875,
+          "max": 1392,
+          "min": -1410
+        },
+        "exact_ratios": {
+          "me": "-1/2",
+          "mse": "537141/2",
+          "mae": "6754741/16384",
+          "pe": "32431/32768"
+        },
+        "integer_sums": {
+          "signed": -32768,
+          "absolute": 27018964,
+          "squared": 17601036288,
+          "different": 64862
+        }
+      },
+      "python_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -224.5,
+          "mse": 96826.5,
+          "mae": 245.046630859375,
+          "pe": 0.9886474609375,
+          "max": 240,
+          "min": -1282
+        },
+        "exact_ratios": {
+          "me": "-449/2",
+          "mse": "193653/2",
+          "mae": "1003711/4096",
+          "pe": "8099/8192"
+        },
+        "integer_sums": {
+          "signed": -3678208,
+          "absolute": 4014844,
+          "squared": 1586405376,
+          "different": 16198
+        }
+      },
+      "status": "passed"
+    },
+    {
+      "id": "lim_me_p75",
+      "kind": "multiplier",
+      "function": "unsgn_LFM_ME_P75",
+      "rtl": "assets/codes/LIM/lim_me_p75.v",
+      "lpl": 8,
+      "width": 8,
+      "mismatches": 0,
+      "examples": [],
+      "c": {
+        "count": 65536,
+        "metrics": {
+          "me": -0.75,
+          "mse": 268634.5,
+          "mae": 412.39013671875,
+          "pe": 0.98974609375,
+          "max": 1392,
+          "min": -1411
+        },
+        "exact_ratios": {
+          "me": "-3/4",
+          "mse": "537269/2",
+          "mae": "844575/2048",
+          "pe": "2027/2048"
+        },
+        "integer_sums": {
+          "signed": -49152,
+          "absolute": 27026400,
+          "squared": 17605230592,
+          "different": 64864
+        }
+      },
+      "c_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -224.75,
+          "mse": 96970.5,
+          "mae": 245.245361328125,
+          "pe": 0.9886474609375,
+          "max": 240,
+          "min": -1283
+        },
+        "exact_ratios": {
+          "me": "-899/4",
+          "mse": "193941/2",
+          "mae": "1004525/4096",
+          "pe": "8099/8192"
+        },
+        "integer_sums": {
+          "signed": -3682304,
+          "absolute": 4018100,
+          "squared": 1588764672,
+          "different": 16198
+        }
+      },
+      "python": {
+        "count": 65536,
+        "metrics": {
+          "me": -0.75,
+          "mse": 268634.5,
+          "mae": 412.39013671875,
+          "pe": 0.98974609375,
+          "max": 1392,
+          "min": -1411
+        },
+        "exact_ratios": {
+          "me": "-3/4",
+          "mse": "537269/2",
+          "mae": "844575/2048",
+          "pe": "2027/2048"
+        },
+        "integer_sums": {
+          "signed": -49152,
+          "absolute": 27026400,
+          "squared": 17605230592,
+          "different": 64864
+        }
+      },
+      "python_subset": {
+        "count": 16384,
+        "metrics": {
+          "me": -224.75,
+          "mse": 96970.5,
+          "mae": 245.245361328125,
+          "pe": 0.9886474609375,
+          "max": 240,
+          "min": -1283
+        },
+        "exact_ratios": {
+          "me": "-899/4",
+          "mse": "193941/2",
+          "mae": "1004525/4096",
+          "pe": "8099/8192"
+        },
+        "integer_sums": {
+          "signed": -3682304,
+          "absolute": 4018100,
+          "squared": 1588764672,
+          "different": 16198
+        }
+      },
+      "status": "passed"
+    }
+  ],
+  "status": "passed",
+  "compiler_diagnostics": "In file included from C:\\Users\\user\\AppData\\Local\\Temp\\lia-lim-validation-1ap9spzm\\baseline_driver.c:8:0:\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c: In function 'unsgn_LFM_Best_PE':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c:12:87: warning: unused parameter 'WL1' [-Wunused-parameter]\n unsigned long int unsgn_LFM_Best_PE(unsigned long int op1, unsigned long int op2, int WL1, int WL2, int VBL)\n                                                                                       ^~~\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c: In function 'unsgn_LFM_Best_MAE':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c:89:88: warning: unused parameter 'WL1' [-Wunused-parameter]\n unsigned long int unsgn_LFM_Best_MAE(unsigned long int op1, unsigned long int op2, int WL1, int WL2, int VBL)\n                                                                                        ^~~\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c: In function 'unsgn_LFM_ME_0':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c:166:84: warning: unused parameter 'WL1' [-Wunused-parameter]\n unsigned long int unsgn_LFM_ME_0(unsigned long int op1, unsigned long int op2, int WL1, int WL2, int VBL)\n                                                                                    ^~~\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c: In function 'unsgn_LFM_ME_P25':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c:243:86: warning: unused parameter 'WL1' [-Wunused-parameter]\n unsigned long int unsgn_LFM_ME_P25(unsigned long int op1, unsigned long int op2, int WL1, int WL2, int VBL)\n                                                                                      ^~~\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c: In function 'unsgn_LFM_ME_P50':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c:320:86: warning: unused parameter 'WL1' [-Wunused-parameter]\n unsigned long int unsgn_LFM_ME_P50(unsigned long int op1, unsigned long int op2, int WL1, int WL2, int VBL)\n                                                                                      ^~~\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c: In function 'unsgn_LFM_ME_P75':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c:401:86: warning: unused parameter 'WL1' [-Wunused-parameter]\n unsigned long int unsgn_LFM_ME_P75(unsigned long int op1, unsigned long int op2, int WL1, int WL2, int VBL)\n                                                                                      ^~~\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c: In function 'unsgn_LFM_ME_N25':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c:478:86: warning: unused parameter 'WL1' [-Wunused-parameter]\n unsigned long int unsgn_LFM_ME_N25(unsigned long int op1, unsigned long int op2, int WL1, int WL2, int VBL)\n                                                                                      ^~~\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c: In function 'unsgn_LFM_ME_N50':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c:555:86: warning: unused parameter 'WL1' [-Wunused-parameter]\n unsigned long int unsgn_LFM_ME_N50(unsigned long int op1, unsigned long int op2, int WL1, int WL2, int VBL)\n                                                                                      ^~~\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c: In function 'unsgn_LFM_ME_N75':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c:635:86: warning: unused parameter 'WL1' [-Wunused-parameter]\n unsigned long int unsgn_LFM_ME_N75(unsigned long int op1, unsigned long int op2, int WL1, int WL2, int VBL)\n                                                                                      ^~~\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c: In function 'unsgn_LFM_Equal_Arch_PE':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c:718:93: warning: unused parameter 'WL1' [-Wunused-parameter]\n unsigned long int unsgn_LFM_Equal_Arch_PE(unsigned long int op1, unsigned long int op2, int WL1, int WL2, int VBL)\n                                                                                             ^~~\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c: In function 'unsgn_LFM_Equal_Arch_MSE':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c:790:94: warning: unused parameter 'WL1' [-Wunused-parameter]\n unsigned long int unsgn_LFM_Equal_Arch_MSE(unsigned long int op1, unsigned long int op2, int WL1, int WL2, int VBL)\n                                                                                              ^~~\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c: In function 'unsgn_LFM_Equal_Arch_ME_P25':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c:862:97: warning: unused parameter 'WL1' [-Wunused-parameter]\n unsigned long int unsgn_LFM_Equal_Arch_ME_P25(unsigned long int op1, unsigned long int op2, int WL1, int WL2, int VBL)\n                                                                                                 ^~~\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c: In function 'unsgn_LFM_Equal_Arch_ME_P50':\nD:/ICVLSI/LimLia/lia_lim_website_starter/lia_lim_site/assets/codes/LFMs.c:907:97: warning: unused parameter 'WL1' [-Wunused-parameter]\n unsigned long int unsgn_LFM_Equal_Arch_ME_P50(unsigned long int op1, unsigned long int op2, int WL1, int WL2, int VBL)\n                                                                                                 ^~~\nC:\\Users\\user\\AppData\\Local\\Temp\\lia-lim-validation-1ap9spzm\\baseline_driver.c: In function 'main':\nC:\\Users\\user\\AppData\\Local\\Temp\\lia-lim-validation-1ap9spzm\\baseline_driver.c:16:12: warning: implicit declaration of function '_fileno' [-Wimplicit-function-declaration]\n   _setmode(_fileno(stdout),_O_BINARY);\n            ^~~~~~~\n",
+  "total_pairs": 851968
+}

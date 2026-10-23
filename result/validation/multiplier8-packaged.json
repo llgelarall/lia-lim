@@ -1,0 +1,32 @@
+{
+  "kind": "multiplier",
+  "status": "passed",
+  "c_exhaustive_comparisons": 6815744,
+  "c_mismatches": 0,
+  "domains": [
+    {
+      "width": 8,
+      "lpl": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "width": 8,
+      "lpl": [
+        8
+      ]
+    }
+  ],
+  "python_checks": "Standalone method ASTs preserved; packaged Python agrees with the combined registry for every a in each domain and b at zero, one, midpoint boundaries, maximum boundaries, a, and its complement, for every listed LPL.",
+  "combined_rtl": "Each original module is concatenated verbatim, with source labels; original modules separately underwent exhaustive simulation.",
+  "manifest": "models/lim/model-manifest.json",
+  "manifest_sha256": "95b157b5a7511ac2e721a535753948fa40b7e632b77828a6f96c52de23ac2048",
+  "evaluator": "tools/check_packaged_models.py",
+  "evaluator_sha256": "b050c0911fe252f5d2d9eb747424e90f75f77abcf6bebd3c6738836266f572a7"
+}

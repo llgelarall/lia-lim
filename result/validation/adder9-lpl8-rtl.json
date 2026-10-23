@@ -1,0 +1,196 @@
+{
+  "kind": "adder",
+  "width": 9,
+  "lpl_values": [
+    8
+  ],
+  "status": "passed",
+  "reference_report": "result/validation/adder9-lpl8-c-python.json",
+  "reference_report_sha256": "2cf5388ee71dcb96372c7a4bbb95d6929469daaad84a239149fa6e7a0f9e6a5b",
+  "evaluator": "tools/validate_rtl.py",
+  "evaluator_sha256": "ba36cf18042370757fa5e53f8f1c2da154ea458b993e89bb70bb2b646686000f",
+  "configurations": [
+    {
+      "id": "lia_00",
+      "lpl": 8,
+      "pairs_checked": 262144,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lia_01",
+      "lpl": 8,
+      "pairs_checked": 262144,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lia_02",
+      "lpl": 8,
+      "pairs_checked": 262144,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lia_03",
+      "lpl": 8,
+      "pairs_checked": 262144,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lia_04",
+      "lpl": 8,
+      "pairs_checked": 262144,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lia_05",
+      "lpl": 8,
+      "pairs_checked": 262144,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lia_06",
+      "lpl": 8,
+      "pairs_checked": 262144,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lia_07",
+      "lpl": 8,
+      "pairs_checked": 262144,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lia_08",
+      "lpl": 8,
+      "pairs_checked": 262144,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lia_09",
+      "lpl": 8,
+      "pairs_checked": 262144,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lia_10",
+      "lpl": 8,
+      "pairs_checked": 262144,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lia_11",
+      "lpl": 8,
+      "pairs_checked": 262144,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lia_12",
+      "lpl": 8,
+      "pairs_checked": 262144,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lia_13",
+      "lpl": 8,
+      "pairs_checked": 262144,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    }
+  ],
+  "rtl_sources": {
+    "assets/codes/LIA/lia_00.v": "98de0e99ad8a8fd2dcc334db78912031ea4ae9da792f10059f00d6796e652b46",
+    "assets/codes/LIA/lia_01.v": "3fc0729c8fc4d91d73540655537d34312d319e9a1bbe85ba91d187794390de2a",
+    "assets/codes/LIA/lia_02.v": "d9f7fbbc00efa3a5b09faf039d437ec98812c91457095d752219de9e8d666ac3",
+    "assets/codes/LIA/lia_03.v": "235e6f78de91ee1cc94cf0ac4d2a6278c2feb077cd617058a8b52bf0cbaac184",
+    "assets/codes/LIA/lia_04.v": "7a83930ff370cb4308ade98b58bf108b91f0a84d6f9b2ea5ac1c0ca9e23c93af",
+    "assets/codes/LIA/lia_05.v": "8fc4c205b7006c7586d6c9dd08e7a8ac49b43dcd0c6ea80e205f148191d28305",
+    "assets/codes/LIA/lia_06.v": "b2ef8c115f1b76d817b0b81e6072d292e7e5b6207dd43218632ed7946ecd5853",
+    "assets/codes/LIA/lia_07.v": "8b8fc219d4a6e4834cbea7dc6933ba3113b31e9e632284833dbc11092ac6187a",
+    "assets/codes/LIA/lia_08.v": "bf378ccba3e79bfdcfc2df84e61cb6e08abeac5856cd6d8e0f4092b58556ae2f",
+    "assets/codes/LIA/lia_09.v": "333df077a635db66cfbdd306408df15a2d4fdb0ee9a116248d728d1ba61beba7",
+    "assets/codes/LIA/lia_10.v": "e44375186433a18e508b63d47837c509414568c59bb80c9ffd46cd3a6849b3df",
+    "assets/codes/LIA/lia_11.v": "21b942753dfe9ad571c0b53167d949644f6f1168d04a7d8ad9b047a3dd5e97f9",
+    "assets/codes/LIA/lia_12.v": "80fe556013404d09d47ac979a163a3c44b84a77e161978fb63bc25eee10c4ac5",
+    "assets/codes/LIA/lia_13.v": "c2fbcf58d60431fc0d81d929d14aa9bfe38e43fdcc9b250603758dff18bbba61"
+  },
+  "toolchain": "Model Technology ModelSim SE-64 vsim 2020.4 Simulator 2020.10 Oct 13 2020",
+  "commands": [
+    {
+      "command": [
+        "C:\\modeltech64_2020.4\\win64\\vlib.exe",
+        "work"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\modeltech64_2020.4\\win64\\vlog.exe",
+        "-quiet",
+        "-work",
+        "work",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIA\\lia_00.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIA\\lia_01.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIA\\lia_02.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIA\\lia_03.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIA\\lia_04.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIA\\lia_05.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIA\\lia_06.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIA\\lia_07.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIA\\lia_08.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIA\\lia_09.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIA\\lia_10.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIA\\lia_11.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIA\\lia_12.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIA\\lia_13.v",
+        "C:\\Users\\user\\AppData\\Local\\Temp\\lia-lim-rtl-bulf7iav\\tb.v"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\modeltech64_2020.4\\win64\\vsim.exe",
+        "-c",
+        "-quiet",
+        "-lib",
+        "work",
+        "tb",
+        "-do",
+        "run -all; quit -f"
+      ],
+      "returncode": 0,
+      "stdout": "Reading pref.tcl\n\n# 2020.4\n\n# vsim -c -quiet -lib work tb -do \"run -all; quit -f\" \n# Start time: 00:26:30 on Oct 24,2026\n# ** Note: (vsim-3812) Design is being optimized...\n# //  ModelSim SE-64 2020.4 Oct 13 2020\n# //\n# //  Copyright 1991-2020 Mentor Graphics Corporation\n# //  All Rights Reserved.\n# //\n# //  ModelSim SE-64 and its associated documentation contain trade\n# //  secrets and commercial or financial information that are the property of\n# //  Mentor Graphics Corporation and are privileged, confidential,\n# //  and exempt from disclosure under the Freedom of Information Act,\n# //  5 U.S.C. Section 552. Furthermore, this information\n# //  is prohibited from disclosure under the Trade Secrets Act,\n# //  18 U.S.C. Section 1905.\n# //\n# run -all\n# ** Note: $finish    : C:/Users/user/AppData/Local/Temp/lia-lim-rtl-bulf7iav/tb.v(30)\n#    Time: 262144 ns  Iteration: 0  Instance: /tb\n# End time: 00:26:34 on Oct 24,2026, Elapsed time: 0:00:04\n# Errors: 0, Warnings: 0\n",
+      "stderr": ""
+    }
+  ],
+  "total_pairs": 3670016
+}

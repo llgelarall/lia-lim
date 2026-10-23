@@ -1,0 +1,186 @@
+{
+  "kind": "multiplier",
+  "width": 8,
+  "lpl_values": [
+    8
+  ],
+  "status": "passed",
+  "reference_report": "result/validation/multiplier8-lpl8-c-python.json",
+  "reference_report_sha256": "6dbe9b779d99ddc3a01a467b0ce985a390e196fdc8a19566765e6a72eec6be8e",
+  "evaluator": "tools/validate_rtl.py",
+  "evaluator_sha256": "ba36cf18042370757fa5e53f8f1c2da154ea458b993e89bb70bb2b646686000f",
+  "configurations": [
+    {
+      "id": "lim_best_mae",
+      "lpl": 8,
+      "pairs_checked": 65536,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lim_best_pe",
+      "lpl": 8,
+      "pairs_checked": 65536,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lim_equal_arch_me_p25",
+      "lpl": 8,
+      "pairs_checked": 65536,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lim_equal_arch_me_p50",
+      "lpl": 8,
+      "pairs_checked": 65536,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lim_equal_arch_mse",
+      "lpl": 8,
+      "pairs_checked": 65536,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lim_equal_arch_pe",
+      "lpl": 8,
+      "pairs_checked": 65536,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lim_me_0",
+      "lpl": 8,
+      "pairs_checked": 65536,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lim_me_n25",
+      "lpl": 8,
+      "pairs_checked": 65536,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lim_me_n50",
+      "lpl": 8,
+      "pairs_checked": 65536,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lim_me_n75",
+      "lpl": 8,
+      "pairs_checked": 65536,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lim_me_p25",
+      "lpl": 8,
+      "pairs_checked": 65536,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lim_me_p50",
+      "lpl": 8,
+      "pairs_checked": 65536,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    },
+    {
+      "id": "lim_me_p75",
+      "lpl": 8,
+      "pairs_checked": 65536,
+      "mismatches": 0,
+      "examples": [],
+      "status": "passed"
+    }
+  ],
+  "rtl_sources": {
+    "assets/codes/LIM/lim_best_mae.v": "a32c655596aa23aef2d97a3ab41274c20dbeeaa8161700e50e3b8f943da3618b",
+    "assets/codes/LIM/lim_best_pe.v": "e1f103ade1d830d582d1761d8d2b86f2522be261b127d4333a5110445eb09f31",
+    "assets/codes/LIM/lim_equal_arch_me_p25.v": "d59f3001780aaf4ed5926d9f9c91576613e7724a57cb83fc6047b2f8ee5412ba",
+    "assets/codes/LIM/lim_equal_arch_me_p50.v": "5fb4f33a62c8761a0bc662f8b7aae28b42109816e32b5b53a36446ae3103481b",
+    "assets/codes/LIM/lim_equal_arch_mse.v": "d428594d6637e6f3f13b1c74d4822566830b1a5b3ae3e64eb970b41c475708ba",
+    "assets/codes/LIM/lim_equal_arch_pe.v": "79333295bfb0914e5224ed3797cf7d26eb5e07abff15f09c79e257efd04d9f10",
+    "assets/codes/LIM/lim_me_0.v": "62fef22a34be63235c15c5a8dfbbff83c395ba029225785ffa522c1ee5731020",
+    "assets/codes/LIM/lim_me_n25.v": "cac09a431bbc31b76a3ad8553f1d0fb5d97da1d6f4b78a83bb3aaa95e8d6d744",
+    "assets/codes/LIM/lim_me_n50.v": "ef2b22d26f080aa050bc62ce380ac26349d5b896c057177e6267cccb3a065d11",
+    "assets/codes/LIM/lim_me_n75.v": "cb85823437886c7e3aa7188409f402773b2649be50662e39bfcea30bf365d968",
+    "assets/codes/LIM/lim_me_p25.v": "6500dd5a021496c2393966d79c4ac3b9ed5755d720da71d8a82257e234e00d96",
+    "assets/codes/LIM/lim_me_p50.v": "8bd34ae9aea75f71356051669378e0cab6326a1a6fdaccb11cf9f6d968b1133c",
+    "assets/codes/LIM/lim_me_p75.v": "a67e1665c7b0b72f3054c0b9b09bb4778f07ef6f421fe51ef022a349778a5f7d"
+  },
+  "toolchain": "Model Technology ModelSim SE-64 vsim 2020.4 Simulator 2020.10 Oct 13 2020",
+  "commands": [
+    {
+      "command": [
+        "C:\\modeltech64_2020.4\\win64\\vlib.exe",
+        "work"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\modeltech64_2020.4\\win64\\vlog.exe",
+        "-quiet",
+        "-work",
+        "work",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIM\\lim_best_mae.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIM\\lim_best_pe.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIM\\lim_equal_arch_me_p25.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIM\\lim_equal_arch_me_p50.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIM\\lim_equal_arch_mse.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIM\\lim_equal_arch_pe.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIM\\lim_me_0.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIM\\lim_me_n25.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIM\\lim_me_n50.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIM\\lim_me_n75.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIM\\lim_me_p25.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIM\\lim_me_p50.v",
+        "D:\\ICVLSI\\LimLia\\lia_lim_website_starter\\lia_lim_site\\assets\\codes\\LIM\\lim_me_p75.v",
+        "C:\\Users\\user\\AppData\\Local\\Temp\\lia-lim-rtl-24t6h2j0\\tb.v"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\modeltech64_2020.4\\win64\\vsim.exe",
+        "-c",
+        "-quiet",
+        "-lib",
+        "work",
+        "tb",
+        "-do",
+        "run -all; quit -f"
+      ],
+      "returncode": 0,
+      "stdout": "Reading pref.tcl\n\n# 2020.4\n\n# vsim -c -quiet -lib work tb -do \"run -all; quit -f\" \n# Start time: 00:26:30 on Oct 24,2026\n# ** Note: (vsim-3812) Design is being optimized...\n# //  ModelSim SE-64 2020.4 Oct 13 2020\n# //\n# //  Copyright 1991-2020 Mentor Graphics Corporation\n# //  All Rights Reserved.\n# //\n# //  ModelSim SE-64 and its associated documentation contain trade\n# //  secrets and commercial or financial information that are the property of\n# //  Mentor Graphics Corporation and are privileged, confidential,\n# //  and exempt from disclosure under the Freedom of Information Act,\n# //  5 U.S.C. Section 552. Furthermore, this information\n# //  is prohibited from disclosure under the Trade Secrets Act,\n# //  18 U.S.C. Section 1905.\n# //\n# run -all\n# ** Note: $finish    : C:/Users/user/AppData/Local/Temp/lia-lim-rtl-24t6h2j0/tb.v(29)\n#    Time: 65536 ns  Iteration: 0  Instance: /tb\n# End time: 00:26:34 on Oct 24,2026, Elapsed time: 0:00:04\n# Errors: 0, Warnings: 0\n",
+      "stderr": ""
+    }
+  ],
+  "total_pairs": 851968
+}

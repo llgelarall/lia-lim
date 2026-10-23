@@ -1,0 +1,96 @@
+{
+  "repairs": [
+    {
+      "source": "assets/codes/LIM/lim_best_mae.v",
+      "original": "assets/codes/original/LIM/lim_best_mae.v",
+      "original_sha256": "5b72e4bf456bf3fa9722c1a4637b93554716b069221cb7c247051a45302f950b",
+      "repaired_sha256": "a32c655596aa23aef2d97a3ab41274c20dbeeaa8161700e50e3b8f943da3618b",
+      "change": "Generate block label small renamed to g_small; no arithmetic expressions changed."
+    },
+    {
+      "source": "assets/codes/LIM/lim_best_pe.v",
+      "original": "assets/codes/original/LIM/lim_best_pe.v",
+      "original_sha256": "f04c1aad6ac698731defd5bfe4c28f890a387a5c347b269510d2133aec3c9805",
+      "repaired_sha256": "e1f103ade1d830d582d1761d8d2b86f2522be261b127d4333a5110445eb09f31",
+      "change": "Generate block label small renamed to g_small; no arithmetic expressions changed."
+    },
+    {
+      "source": "assets/codes/LIM/lim_equal_arch_me_p25.v",
+      "original": "assets/codes/original/LIM/lim_equal_arch_me_p25.v",
+      "original_sha256": "c1c0f0ea423159c824708b181777384ee46fba60cd3767518b852318d7a18b6a",
+      "repaired_sha256": "d59f3001780aaf4ed5926d9f9c91576613e7724a57cb83fc6047b2f8ee5412ba",
+      "change": "Generate block label small renamed to g_small; no arithmetic expressions changed."
+    },
+    {
+      "source": "assets/codes/LIM/lim_equal_arch_me_p50.v",
+      "original": "assets/codes/original/LIM/lim_equal_arch_me_p50.v",
+      "original_sha256": "4dd1bc6f92c47330400f6b558ff3ef02326324e2d59e1062d9d5d3bdfa2a87a5",
+      "repaired_sha256": "5fb4f33a62c8761a0bc662f8b7aae28b42109816e32b5b53a36446ae3103481b",
+      "change": "Generate block label small renamed to g_small; no arithmetic expressions changed."
+    },
+    {
+      "source": "assets/codes/LIM/lim_equal_arch_mse.v",
+      "original": "assets/codes/original/LIM/lim_equal_arch_mse.v",
+      "original_sha256": "a1a8c06ba8b430423f84a33101833a38e0ea8b784c6c0316e2a714d7c45d4f53",
+      "repaired_sha256": "d428594d6637e6f3f13b1c74d4822566830b1a5b3ae3e64eb970b41c475708ba",
+      "change": "Generate block label small renamed to g_small; no arithmetic expressions changed."
+    },
+    {
+      "source": "assets/codes/LIM/lim_equal_arch_pe.v",
+      "original": "assets/codes/original/LIM/lim_equal_arch_pe.v",
+      "original_sha256": "e0bdf18825c2f9a6149a3d3f20ea594e4c37cf0a3d4d7d1c5761637434c878d6",
+      "repaired_sha256": "79333295bfb0914e5224ed3797cf7d26eb5e07abff15f09c79e257efd04d9f10",
+      "change": "Generate block label small renamed to g_small; no arithmetic expressions changed."
+    },
+    {
+      "source": "assets/codes/LIM/lim_me_0.v",
+      "original": "assets/codes/original/LIM/lim_me_0.v",
+      "original_sha256": "92a0fce530c6a9472486f36f6338b8e375dd17f6998b33e1d3d70b1465abb7d5",
+      "repaired_sha256": "62fef22a34be63235c15c5a8dfbbff83c395ba029225785ffa522c1ee5731020",
+      "change": "Generate block label small renamed to g_small; no arithmetic expressions changed."
+    },
+    {
+      "source": "assets/codes/LIM/lim_me_n25.v",
+      "original": "assets/codes/original/LIM/lim_me_n25.v",
+      "original_sha256": "6ad696a677427c5585af386de55a90ea43e9fd753c42718a23412dc460704abb",
+      "repaired_sha256": "cac09a431bbc31b76a3ad8553f1d0fb5d97da1d6f4b78a83bb3aaa95e8d6d744",
+      "change": "Generate block label small renamed to g_small; no arithmetic expressions changed."
+    },
+    {
+      "source": "assets/codes/LIM/lim_me_n50.v",
+      "original": "assets/codes/original/LIM/lim_me_n50.v",
+      "original_sha256": "849a5341819aa2dacb3a1e22e14df6d06c40a2a33b792d20ea3d7fdf642deb19",
+      "repaired_sha256": "ef2b22d26f080aa050bc62ce380ac26349d5b896c057177e6267cccb3a065d11",
+      "change": "Generate block label small renamed to g_small; no arithmetic expressions changed."
+    },
+    {
+      "source": "assets/codes/LIM/lim_me_n75.v",
+      "original": "assets/codes/original/LIM/lim_me_n75.v",
+      "original_sha256": "3c86c51a3787d514cdd0e254952e1a642e86b8b105e35ef0abb0d12f2d79fcc9",
+      "repaired_sha256": "cb85823437886c7e3aa7188409f402773b2649be50662e39bfcea30bf365d968",
+      "change": "Generate block label small renamed to g_small; no arithmetic expressions changed."
+    },
+    {
+      "source": "assets/codes/LIM/lim_me_p25.v",
+      "original": "assets/codes/original/LIM/lim_me_p25.v",
+      "original_sha256": "9601d81c825e13d0d0b70bcc5c38017a1c056419fa451419da0cf6a9e3a74b67",
+      "repaired_sha256": "6500dd5a021496c2393966d79c4ac3b9ed5755d720da71d8a82257e234e00d96",
+      "change": "Generate block label small renamed to g_small; no arithmetic expressions changed."
+    },
+    {
+      "source": "assets/codes/LIM/lim_me_p50.v",
+      "original": "assets/codes/original/LIM/lim_me_p50.v",
+      "original_sha256": "27f5d3e7f85156559d0036d10bf28658c5ef641a5a0af8e3c31c3df497a0f2e1",
+      "repaired_sha256": "8bd34ae9aea75f71356051669378e0cab6326a1a6fdaccb11cf9f6d968b1133c",
+      "change": "Generate block label small renamed to g_small; no arithmetic expressions changed."
+    },
+    {
+      "source": "assets/codes/LIM/lim_me_p75.v",
+      "original": "assets/codes/original/LIM/lim_me_p75.v",
+      "original_sha256": "77e58d3df14836ed23d827fb897f315f2b9ae125168ec602ca1e25c0b5e16659",
+      "repaired_sha256": "a67e1665c7b0b72f3054c0b9b09bb4778f07ef6f421fe51ef022a349778a5f7d",
+      "change": "Generate block label small renamed to g_small; no arithmetic expressions changed."
+    }
+  ],
+  "reason": "small is a reserved Verilog drive-strength keyword and cannot be used as an unescaped generate label."
+}

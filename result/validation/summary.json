@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "configurations": 216,
+  "architectures": 27,
+  "total_c_python_pairs": 16908288,
+  "total_rtl_pairs": 16908288,
+  "families": [
+    {
+      "name": "LIA adders",
+      "kind": "adder",
+      "architectures": 14,
+      "configurations": 112,
+      "c_python_pairs": 10092544,
+      "c_python_mismatches": 0,
+      "rtl_pairs": 10092544,
+      "rtl_mismatches": 0,
+      "packaged_c_pairs": 10092544,
+      "packaged_c_mismatches": 0,
+      "status": "passed"
+    },
+    {
+      "name": "LIM multipliers",
+      "kind": "multiplier",
+      "architectures": 13,
+      "configurations": 104,
+      "c_python_pairs": 6815744,
+      "c_python_mismatches": 0,
+      "rtl_pairs": 6815744,
+      "rtl_mismatches": 0,
+      "packaged_c_pairs": 6815744,
+      "packaged_c_mismatches": 0,
+      "status": "passed"
+    }
+  ],
+  "limitations_and_repairs": [
+    "Base validation: unsigned N=8, LPL=1..7. Additional benchmarks: 9-bit LIA at LPL=8 and 8-bit LIM at LPL=8. No other widths, signed operands, asymmetric operands, or boundary settings are established by these checks.",
+    "Full ordered input domains are evaluated uniformly. Each C/Python report also includes the lower-half operand subset.",
+    "Errors use approximate minus exact output, unnormalized output units (squared for MSE), and PE as a fraction. Signed errors in the supplied comparison CSVs use the opposite sign; converted LIA/LIM rows match the independently evaluated C results.",
+    "CSV area and power values are available only at benchmark settings. The maintainer reports Yosys/ABC Nangate45 synthesis and pre-layout OpenSTA within OpenROAD under identical timing, loading, and switching-activity assumptions. Versions, corner, numerical conditions, and report definitions were not supplied. Timing is retained verbatim; negative adder timing cannot be interpreted as physical propagation delay.",
+    "The supplied EvoApprox CSV verification flags have not been independently rerun because those model sources and evaluation scripts were not supplied.",
+    "LFMs.h declarations were recovered from LFMs.c. Thirteen RTL generate labels were changed from the reserved word small to g_small; uploaded originals remain available. Arithmetic expressions were unchanged."
+  ]
+}
